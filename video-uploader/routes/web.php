@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	//return view('welcome');
+	return view("master");
+});
+
+Route::get('/videosuploaded', function () {
+	//return view('welcome');
+	return view("uploads");
 });

@@ -1,0 +1,793 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"the",
+				"the_num"
+			],
+			[
+				"data",
+				"data_arr"
+			],
+			[
+				"join",
+				"joinLeft"
+			],
+			[
+				"get_includ",
+				"get_included_files"
+			],
+			[
+				"get_inc",
+				"get_included_files"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"get_cl",
+				"get_class_methods"
+			],
+			[
+				"getcl",
+				"get_class"
+			],
+			[
+				"is_nu",
+				"is_numeric"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"pro",
+				"product_items2"
+			],
+			[
+				"getS",
+				"getSku"
+			],
+			[
+				"before",
+				"page-break-before"
+			],
+			[
+				"add",
+				"addslashes"
+			],
+			[
+				"json",
+				"json_data"
+			],
+			[
+				"js",
+				"json_data"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"vertica",
+				"vertical-align"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"opac",
+				"khtml-opacity"
+			],
+			[
+				"opa",
+				"apple-opacity"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"te",
+				"temp_json"
+			],
+			[
+				"ele",
+				"element_id"
+			],
+			[
+				"qu",
+				"quantity"
+			],
+			[
+				"url",
+				"url_obj"
+			],
+			[
+				"client",
+				"client_id"
+			],
+			[
+				"text-",
+				"text-overflow"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"j",
+				"json_data"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"blac",
+				"black_066"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 408.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/projects/my-project-name/README.md",
+		"/C/xampp/htdocs/projects/palmasettemiinc/index.php",
+		"/C/xampp/htdocs/projects/my-project-name/src/app/app.module.ts",
+		"/C/xampp/htdocs/projects/my-project-name/src/app/app.component.ts",
+		"/C/xampp/htdocs/projects/my-project-name/package.json",
+		"/C/xampp/htdocs/projects/my-project-name/src/app/app.component.spec.ts",
+		"/C/xampp/htdocs/projects/Portfolio/package.json",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/WallaceDist/header.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/WallaceDist/index.php",
+		"/C/xampp/htdocs/projects/Portfolio/src/settings/app.settings.ts",
+		"/C/xampp/htdocs/projects/my-project-name/node_modules/angular4-json-schema-view/src/material-design-framework/material-textarea.component.ts",
+		"/C/xampp/htdocs/projects/my-project-name/node_modules/@angular/material/bundles/material-datepicker.umd.js",
+		"/C/xampp/htdocs/projects/my-project-name/node_modules/angular4-json-schema-view/src/widget-library/widget-library.module.ts",
+		"/C/xampp/htdocs/projects/angular2-schema-form-demo/src/app/app.component.ts",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/twentyseventeen/functions.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-basic/header.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/page.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/header.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/WallaceDist/functions.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/js/main.js",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/plugins/wp-rest-api-v2-menus/wp-rest-api-v2-menus.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/ts/main.ts",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/ts/app.ts",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-config.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-settings.php",
+		"/C/xampp/htdocs/projects/angular4_wpai-test/index.html",
+		"/C/xampp/htdocs/projects/angular4_wpai-test/config.js",
+		"/C/xampp/htdocs/projects/angular4_wpai-test/zone.js",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-includes/nav-menu-template.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-includes/nav-menu.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-includes/wp-db.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/ng-wp-theme/node_modules/@angular/cli/node_modules/@ngtools/json-schema/src/schema-class-factory.js",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/404.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/archive.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/comments.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-aside.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-link.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-page.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-quote.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-single.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/change-log.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/getting-started-install.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/start-design-config.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/functions.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/image.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/BootstrapBasicAdminHelp.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/extras.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/template-tags.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/widgets/BootstrapBasicSearchWidget.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/languages/default.mo",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/languages/default.po",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/no-results.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/readme.txt",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/search.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/searchform.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/style.css",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/getting-started-custom-bg.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/getting-started-widget-navbar.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/index.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/start-design-change-language.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/start-design-resources.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/footer.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/views/BootstrapBasicAdminHelp_v.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/index.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/BootstrapBasicMyWalkerNavMenu.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/template-functions.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/template-widgets-hook.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-basic/style.css",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/endurance-page-cache/_index.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/index.html",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/single.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/plugins/jetpack/modules/theme-tools/content-options/featured-images.php",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/js/config.js",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/config.js",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/src/app.ts",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/src/main.ts",
+		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/index2.html",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Catalog/Block/Product/Widget/Html/Pager.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/PagerBugfix/Block/Product/Widget/Html/Pager.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/Block/Navigation.php",
+		"/C/Users/Karl/AppData/Roaming/npm/node_modules/@angular/cli/node_modules/vm-browserify/test/vm.js",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/SkuSorter/Catalog/Block/Product/Widget/New.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Catalog/Block/Product/Widget/New.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/SkuSorter/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/etc/modules/ThreeRingDesign_SkuSorter.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/etc/system.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/etc/widget.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/etc/modules/Psychose_CallBack.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Helper/Data.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Block/Left.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Block/Adminhtml/Callback.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Block/Index.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Naya/CallForPrice/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/template/threeringdesign/catalog/navigation/left.phtml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Pfay/Films/Block/Adminhtml/Grid.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/threeringdesign_hideemptyoutofstockcategories.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/catalog.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/Model/Resource/Category.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/rwd/default/layout/threeringdesign_hideemptyoutofstockcategories.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/naya_callforprice.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Phoenix/Moneybookers/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/adminhtml/default/default/template/backup/left.phtml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Cm/RedisSession/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Catalog/Model/Resource/Category.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/TM/Core/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/verify_threering-hideemptyoutofstockcategories.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/googleanalytics.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/moneybookers.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/TM/Testimonials/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Padoo/Testimonial/etc/config.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Padoo/Testimonial/etc/system.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/etc/modules/ThreeRingDesign_HideEmptyOutOfStockCategories.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/Catalog/Block/Product/Widget/New.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/rwd/default/template/page/html/topmenu.phtml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Catalog/Helper/Category.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/etc/modules/ThreeRingDesign_HideEmptyOutOfStockCategories.xml",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Cm/RedisSession/Model/Session.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Core/Model/Mysql4/Session.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Core/Model/Resource/Session.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Naya/CallForPrice/Block/Checkout/Cart/Crosssell.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Naya/CallForPrice/Model/Resource/Setup.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Naya/CallForPrice/Model/Observer.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/TM/Testimonials/controllers/IndexController.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/TM/Testimonials/Model/Data.php",
+		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/TM/Testimonials/Model/Observer.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\projects\\Portfolio\\src",
+			"C:\\xampp\\htdocs\\projects\\my-project-name",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\WallaceDist",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\bootstrap-basic",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\twentyseventeen",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\bootstrap-basic",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\WallaceDist",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\bootstrap-angular4",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\bootstrap-angular4",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\bootstrap-angular4\\ts",
+			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\bootstrap-angular4",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\Phoenix\\Moneybookers",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core\\Mage",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core\\Mage\\",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core\\Mage\\Catalog",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core\\Mage",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core\\Mage",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core\\Mage\\Catalog",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend\\rwd",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app\\code\\local\\TM\\Testimonials\\Model",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app\\code",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app\\design\\adminhtml",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local\\TM\\Testimonials",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\KCF",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local\\KCF",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\KCF",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local\\KCF",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\KCF",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\TM",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\local\\Psychose",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\core",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app\\design\\adminhtml",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition\\app",
+			"C:\\Users\\Karl\\Documents\\work\\puppies_of_westport\\magento_extension_testimonials_1.2.2\\extension source 1.2.2 - magento CE 1.7.x.x - 1.9.x.x edition",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend\\rwd",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\Naya\\CallForPrice",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport;C:\\Users\\Karl\\Downloads\\import_categories(1)",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport;C:\\Users\\Karl\\Downloads\\import_categories(1);",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\Vsourz",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\Vsourz\\Bannerslider",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend\\rwd",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend\\rwd\\default\\template",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\design\\frontend\\rwd",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport\\app\\code\\community\\Naya",
+			"C:\\xampp\\htdocs\\projects\\PuppiesOfWestport",
+			"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\",
+			"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\new-royalslider",
+			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry",
+			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry\\magneto",
+			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry",
+			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry\\magneto",
+			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\switcher_test3_state",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\carousel-with-angularjs",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\angular_bootstrap_dropdown2",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\switcher_test2_state",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white",
+			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\includes\\classes"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"this.PortfolioBaseServiceURL",
+			"md-input-container",
+			"MaterialModule",
+			"_menu",
+			"menu",
+			"nav_menu",
+			"wp_nav_menu",
+			"scheduleTask",
+			"theme_location",
+			"bootstrap-basic",
+			"Bootstrap Basic",
+			"bootstrap basic",
+			"@package bootstrap-basic",
+			"dashboard",
+			"dev-palmasettimiinc.3ring",
+			"exports.runInThisContext",
+			"Mage_Catalog_Block_Product_Widget_New",
+			"update",
+			"left.phtml",
+			"template/naya/callforprice",
+			"<template>",
+			"activateemail",
+			"<template>",
+			"<rewrite>",
+			"getProductC",
+			"navadmin",
+			"navadmin/data",
+			"echo",
+			"select",
+			"getReadConnection",
+			"cataloginventory",
+			"getProduct",
+			"catalog/category",
+			"function select",
+			" select",
+			"select",
+			"function select",
+			"select",
+			"getCurrentChildCategories",
+			"getStoreCategories",
+			"Mage_Catalog_Block_Navigation",
+			"Varien_Data_Tree_Node",
+			"cache",
+			"getCurrentChildCategories",
+			"_tree",
+			"<!-- top of the var dump",
+			"$jokes",
+			"extends Mage_Catalog_Model_Resource_Category_Flat",
+			"$child->getIsActive()",
+			"addFieldToFilter",
+			"product_collection",
+			"catalog/category_collection",
+			"_nodes",
+			"_menu",
+			"topnav",
+			"catalog.topnav",
+			"$_menu",
+			"function getIsActive(",
+			"getIsActive(",
+			"getIsActive",
+			"_getResource",
+			"resource",
+			"getProductCount",
+			"narrow-by-list2",
+			"$collection",
+			"catalog/category",
+			"function getProductCount",
+			"getProductCount",
+			"renderCategoryMenuItemHtml",
+			"renderCategoriesMenuHtml",
+			"getStoreCategories",
+			"hasChildren",
+			"catalog_topnav_renderer",
+			"topnav",
+			"_childNodes",
+			"nav-primary",
+			"#e3ebf4",
+			"nav-primary",
+			"iframe",
+			"narrow-by-list",
+			"bootstrap.min.css",
+			"favicon.ico",
+			".pager",
+			"cccccc",
+			"f4f4f4",
+			"data",
+			"data-ajax-url",
+			"subject",
+			"getSubject",
+			"setSubject",
+			"subject",
+			"testimonial-image",
+			"page-header",
+			".label",
+			"label",
+			"select",
+			"Cache Lifetime (Seconds)",
+			"$product_items",
+			"page",
+			"per_page",
+			"products_per_page",
+			"DEFAULT_PRODUCTS_PER_PAGE",
+			"$gotData",
+			"LastNum",
+			"amount--has-pages",
+			"amount",
+			"of ",
+			"$i",
+			"sort",
+			"testimonial_id",
+			"Testimonial id",
+			"tm_testimonials",
+			"tmcore",
+			"TM_Testimonials",
+			"KCF_Testimonials",
+			"TM_Testimonials",
+			"tm_testimonials",
+			"TM_",
+			"tmcore",
+			"TM_",
+			"TM_Testimonials.xml",
+			"Mage_Adminhtml_Block_Widget_Grid_Container",
+			"setBody",
+			"_body",
+			"_request",
+			"_body",
+			"_request",
+			"_body"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"bootstrap-angular4",
+			"Bootstrap Angular4 built from Bootstrap Basic",
+			"@package bootstrap-angular4",
+			"rgba(0,0,0,0.04)",
+			"nav-primary",
+			"bec5cc",
+			"e3ebf4",
+			"formsubmission_id",
+			"KCF_Contactforms",
+			"kcf_contactforms",
+			"KCF_",
+			"kcfcore",
+			"KCF_",
+			"logo_puppies.png",
+			"Search Puppies...",
+			",\"Default\",",
+			",,\"Default\"",
+			",\"Default\",\"base\"",
+			",\"Default\",\"base\",",
+			",\"Default\", \"base\",",
+			"\"\", \"base\",",
+			"\"base\",\"simple\",",
+			",\"for_sale\",",
+			"$product->",
+			"ddvars",
+			"dropdowngroupvars",
+			"slide_",
+			"proj_",
+			"window.url_router_params",
+			"link_adjustment_iteration",
+			".link_adjustment_slide",
+			"\t",
+			"$white"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "wwe-video-uploader.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"theme-config.php",
+				"wp-content\\plugins\\jetpack\\modules\\theme-tools\\content-options\\featured-images.php"
+			],
+			[
+				"vm.js",
+				"cli\\node_modules\\vm-browserify\\test\\vm.js"
+			],
+			[
+				"catalog/navigation/left.phtml",
+				"PuppiesOfWestport\\app\\design\\frontend\\rwd\\default\\template\\catalog\\navigation\\left.phtml"
+			],
+			[
+				"left.phtml",
+				"PuppiesOfWestport\\app\\design\\adminhtml\\default\\default\\template\\backup\\left.phtml"
+			],
+			[
+				"app/code/core/mage/catalog/model/category.php",
+				"PuppiesOfWestport\\app\\code\\core\\Mage\\Catalog\\Model\\Category.php"
+			],
+			[
+				"topmenu",
+				"app\\design\\frontend\\rwd\\default\\template\\page\\html\\topmenu.phtml"
+			],
+			[
+				"new_grid",
+				"app\\design\\frontend\\rwd\\default\\template\\catalog\\product\\widget\\new\\content\\new_grid.phtml"
+			],
+			[
+				"",
+				"app\\design\\frontend\\rwd\\default\\template\\catalog\\product\\widget\\new\\content\\new_grid.phtml"
+			],
+			[
+				"config.xml",
+				"app\\etc\\config.xml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$$alias"
+			],
+			[
+				"Mage_Catalog_Block_Product_Widget_Html_Pager",
+				"Mage_Catalog_Block_Product_Widget_Html_Pager"
+			],
+			[
+				"Varien_Data_Tree_Node_Collection",
+				"Varien_Data_Tree_Node_Collection"
+			],
+			[
+				"Mage_Page_Block_Html_Topmenu_Render",
+				"Mage_Page_Block_Html_Topmenu_Renderer"
+			],
+			[
+				"topNav",
+				"topnav"
+			],
+			[
+				"topnav",
+				"topnav"
+			],
+			[
+				"Mage_Page_Block_Html_Topmenu",
+				"Mage_Page_Block_Html_Topmenu"
+			],
+			[
+				"Mage_Catalog_Block_Product_Widget_New",
+				"Mage_Catalog_Block_Product_Widget_New"
+			],
+			[
+				"Mage_Core_Controller_Response_Http",
+				"Mage_Core_Controller_Response_Http"
+			],
+			[
+				"email_te",
+				"Mage_Core_Model_Email_Template"
+			],
+			[
+				"getSentSuccess",
+				"_registerMasspaymentsSuccess"
+			],
+			[
+				"Mage_Core_Block_Abstract",
+				"Mage_Core_Block_Abstract"
+			],
+			[
+				"Mage_Core_Block_Template",
+				"Mage_Core_Block_Template"
+			]
+		],
+		"width": 632.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 375.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

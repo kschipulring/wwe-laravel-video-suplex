@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    #if requested resource isn't a file
+    # and isn't a directory
+    # then serve local error script 
+    RewriteCond %{REQUEST_FILENAME} !-f  
+    RewriteCond %{REQUEST_FILENAME} !-d  
+    RewriteRule .* 404.php [L] 
+</IfModule>
