@@ -177,6 +177,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        Plugin for php artisan code:models via reliese/laravel
+        */
+        Reliese\Coders\CodersServiceProvider::class,
     ],
 
     /*
