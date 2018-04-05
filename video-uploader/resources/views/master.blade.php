@@ -6,6 +6,9 @@
   </head>
 
   <body class="text-center">
+
+    @include('common-navbar')
+
     <form class="form-signin">
       <img class="mb-4" src="public/svg/wwe_logo.svg" alt="" width="100" height="100" />
       <h1 class="h3 mb-3 font-weight-normal">Upload a video</h1>

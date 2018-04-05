@@ -6,6 +6,7 @@
 
     <script src="public/js/vue.1.0.16.js"></script>
     
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 
     <!-- Bootstrap core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
