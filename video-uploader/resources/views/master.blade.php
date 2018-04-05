@@ -14,7 +14,6 @@
       <h1 class="h3 mb-3 font-weight-normal">Upload a video</h1>
       <label for="title" class="sr-only">New Video Title</label>
       
-
       <div id="app">
         <input type="text" id="title" name="title" class="form-control" v-model="form.title" :disabled="disabled == 1 ? true : false"
         placeholder="your awesome title" autofocus />
