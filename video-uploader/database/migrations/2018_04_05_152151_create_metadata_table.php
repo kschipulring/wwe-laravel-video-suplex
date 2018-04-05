@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVideosTable extends Migration
+class CreateMetadataTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateVideosTable extends Migration
      */
     public function up()
     {
-        Schema::create('videos', function (Blueprint $table) {
+        Schema::create('metadata', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('file_name');
-            $table->integer('size')->nullable();
-            $table->string('format')->nullable();
-            $table->integer('bitrate')->nullable();
-            $table->integer('uploaded_by_uid');
+            $table->integer('vid');
+            $table->mediumText('keywords')->nullable();
+            $table->mediumText('location_city')->nullable();
+            $table->mediumText('location_stateprovince')->nullable();
+            $table->string('location_country')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateVideosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('videos');
+        Schema::dropIfExists('metadata');
     }
 }
