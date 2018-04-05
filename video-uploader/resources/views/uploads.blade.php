@@ -1,23 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Video List Viewer">
-    <meta name="author" content="Karl Schipul">
-    <link rel="icon" href="favicon.ico">
+@extends('layouts.app')
 
-    <title>WWE videos</title>
+@section('titlesupplment') list of uploaded videos @endsection
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?php echo dirname(url('/')) ?>/public/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="<?php echo dirname(url('/')) ?>/public/css/uploads.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center">
-
+@section('content')
     <div class="table-responsive">
         <table class="table table-striped table-sm">
             <thead>
@@ -44,5 +29,9 @@
             </tbody>
         </table>
     </div>
-  </body>
-</html>
+@endsection
+
+
+@section('endscriptfooter')
+
+@endsection

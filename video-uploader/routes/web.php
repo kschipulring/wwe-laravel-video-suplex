@@ -16,7 +16,14 @@ Route::get('/', function () {
 	return view("master");
 });
 
+Route::get('/videosuploader', function () {
+	return view("uploader");
+});
+
 Route::get('/videosuploaded', function () {
-	//return view('welcome');
 	return view("uploads");
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
