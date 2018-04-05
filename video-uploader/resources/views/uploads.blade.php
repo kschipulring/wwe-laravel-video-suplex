@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Video List Viewer">
+    <meta name="author" content="Karl Schipul">
     <link rel="icon" href="favicon.ico">
 
-    <title>WWE video uploader</title>
+    <title>WWE videos</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo dirname(url('/')) ?>/public/css/bootstrap.min.css" rel="stylesheet">
@@ -18,31 +18,31 @@
 
   <body class="text-center">
 
-<div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
                 <tr>
-                  <th>Title</th>
-                  <th>File Name</th>
-                  <th>Duration (HH:MM:SS)</th>
-                  <th>File Size</th>
-                  <th>Video Format</th>
-                  <th>Bitrate</th>
-                  <th>Keywords</th>
+                    <th>Title</th>
+                    <th>File Name</th>
+                    <th>Duration (HH:MM:SS)</th>
+                    <th>File Size</th>
+                    <th>Video Format</th>
+                    <th>Bitrate</th>
+                    <th>Keywords</th>
                 </tr>
-              </thead>
-              <tbody>
+            </thead>
+            <tbody>
                 <tr>
-                  <td>sample video</td>
-                  <td>myvid.mp4</td>
-                  <td>00:01:34</td>
-                  <td>2 mb</td>
-                  <td>mp4</td>
-                  <td>96kbs</td>
-                  <td>cool vids, dolphins, cats, first vids</td>
+                    <td>sample video</td>
+                    <td>myvid.mp4</td>
+                    <td>00:01:34</td>
+                    <td>2 mb</td>
+                    <td>mp4</td>
+                    <td>96kbs</td>
+                    <td>cool vids, dolphins, cats, first vids</td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
+            </tbody>
+        </table>
+    </div>
   </body>
 </html>

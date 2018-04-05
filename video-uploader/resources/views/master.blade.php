@@ -1,36 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
-
     <title>WWE video uploader</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="public/css/form.css" rel="stylesheet">
+    @include('common-form-header')
   </head>
 
   <body class="text-center">
     <form class="form-signin">
-      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="mb-4" src="public/svg/wwe_logo.svg" alt="" width="100" height="100" />
       <h1 class="h3 mb-3 font-weight-normal">Upload a video</h1>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
+      <label for="title" class="sr-only">New Video Title</label>
+      
+
+      <div id="app">
+        <input type="text" id="title" name="title" class="form-control" v-model="form.title" :disabled="disabled == 1 ? true : false" placeholder="your awesome title" autofocus />
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" id="checkbox" v-model="disabled" /> Attempt to use title from video meta data if one is present
+          </label>
+        </div>
+
+        <div class="mb-3">
+          <input name="videofile" type="file" accept="video/mp4" required />
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
       </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2018</p>
     </form>
   </body>
+  <script src="public/js/uploader.js"></script>
 </html>
