@@ -5,8 +5,10 @@ if( empty($message) ){
     $message = $_GET["message"];
 }
 
-$dec_msg = base64_decode( $message );
+$dec_msg = base64_decode( trim($message) );
 ?>
+
+@section('titlesupplment') Home - {{ $dec_msg }}  @endsection
 
 @section('content')
 <div class="container">
@@ -23,9 +25,20 @@ $dec_msg = base64_decode( $message );
                     @endif
 
                     You are logged in!  
-
+                    <br/>
+                    <br/>
 
                     {{ $dec_msg }}
+
+                    <br/>
+                    <br/>
+
+                    <a href="{{ url('/videosuploaded') }}">See Video Uploads</a>
+
+                    <br/>
+                    <br/>
+
+                    <a href="{{ url('/videosuploader') }}">Upload a video</a>
                 </div>
             </div>
         </div>

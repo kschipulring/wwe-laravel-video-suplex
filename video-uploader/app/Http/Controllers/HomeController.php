@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $message = (empty($_GET["message"]))? base64_encode("Welcome") : urldecode($_GET["message"]);
+
+        return view('home', ['message' => $message]);
     }
 }

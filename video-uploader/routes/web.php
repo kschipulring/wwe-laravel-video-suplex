@@ -16,17 +16,23 @@ Route::get('/', function () {
 	return view("master");
 });
 
-Route::get('/videosuploader', function () {
-	return view("uploader");
-});
+
+Route::get('/videosuploader', 'VideosController@inspectauth');
+
 
 Route::get('/videosuploaderinternal', function () {
 	return view("partials.uploader-form-internal");
 });
 
+
+/*
 Route::get('/videosuploaded', function () {
 	return view("uploads");
 });
+*/
+
+Route::get('/videosuploaded', 'VideosController@vidlist');
+
 
 Auth::routes();
 

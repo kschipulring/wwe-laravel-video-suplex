@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use App\Http\Helpers;
+
 class RegisterController extends Controller
 {
     /*
@@ -62,10 +64,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        /*echo "<pre>";
+        var_dump( $_SERVER );
+        var_dump( $_REQUEST );
+
+        die( 'Helpers::getRealIpAddr() = ' . Helpers::getRealIpAddr() );*/
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'ipaddress' => Helpers::getRealIpAddr()
         ]);
     }
 }

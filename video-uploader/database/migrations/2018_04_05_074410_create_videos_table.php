@@ -18,6 +18,7 @@ class CreateVideosTable extends Migration
             $table->string('title');
             $table->string('file_name');
             $table->string('original_file_name');
+            $table->integer('duration')->nullable();
             $table->integer('size')->nullable();
             $table->string('format')->nullable();
             $table->integer('bitrate')->nullable();

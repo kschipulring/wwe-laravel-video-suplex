@@ -1,4 +1,6 @@
 <?php
+namespace App\Http;
+
 if (!class_exists('Helpers')) {
 	class Helpers{
 		

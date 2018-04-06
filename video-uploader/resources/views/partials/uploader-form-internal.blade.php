@@ -1,3 +1,5 @@
+<?php  use App\Http\Helpers; ?>
+
 <input type="text" id="title" name="title" class="form-control" v-model="form.title" :disabled="disabled == 1 ? true : false"
 placeholder="your awesome title" autofocus />
 

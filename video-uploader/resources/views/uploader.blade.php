@@ -1,6 +1,11 @@
+<?php  use App\Http\Helpers; ?>
+
 @extends('layouts.app')
 
-@section('titlesupplment') video uploader @endsection
+
+@section('titlesupplment')
+ video uploader
+@endsection
 
 
 @section('headtag')
