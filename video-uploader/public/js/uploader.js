@@ -23,6 +23,14 @@ $( document ).ready(function() {
 			methods: {
 			  processFile(event) {
 			    if( event.target.files[0] && event.target.files[0].type === "video/mp4" ){
+
+
+					if(event.target.files[0].size > window.maxFileSize){
+						alert("File is too big!");
+						event.target.value = "";
+					};
+
+
 				    this.uploaddisabled = 0;
 				    this.uploadbuttontitle = "";
 			    }else{
