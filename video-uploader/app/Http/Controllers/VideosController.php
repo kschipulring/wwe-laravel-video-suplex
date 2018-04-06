@@ -40,9 +40,6 @@ class VideosController extends Controller
 		$ThisFileInfo = $getID3->analyze( storage_path("app/" . $path) );
 
 
-		//var_dump( $ThisFileInfo );  die();
-
-
 		$filesize = (!empty($ThisFileInfo["filesize"]))? $ThisFileInfo["filesize"] : "";
 
 		$fileformat = (!empty($ThisFileInfo["fileformat"]))? $ThisFileInfo["fileformat"] : "";
@@ -51,14 +48,13 @@ class VideosController extends Controller
 
 		$bitrate = (!empty($ThisFileInfo["bitrate"]))? $ThisFileInfo["bitrate"] : "";
 
+
 		/*
 		copies data from all subarrays of [tags] into [comments] so
  		metadata is all available in one location for all tag formats
  		*/
 		\getid3_lib::CopyTagsToComments($ThisFileInfo);
 
-
-		//echo('<pre>'.htmlentities(print_r($ThisFileInfo['comments'], true), ENT_SUBSTITUTE).'</pre>');
 
 
 		//db insert for the basic video information
@@ -106,33 +102,23 @@ class VideosController extends Controller
 		return redirect()->route('home', ['message' => $message]);
     }
 
-/*Full texts	
-id
-title
-file_name
-original_file_name
-duration
-size
-format
-bitrate
-uploaded_by_uid
-created_at*/
     public function vidlist(){
     	$videos = DB::table('videos AS v')
     	->selectRaw("v.id, v.title, v.file_name, v.original_file_name, v.duration,
     		v.size, v.format, v.bitrate, v.uploaded_by_uid, u.name as username,
     		IFNULL(m.keywords,'') AS keywords, CONCAT(IFNULL(m.location_city, ''),
     		', ',  IFNULL(m.location_stateprovince, ''), ', ',
-    		IFNULL(m.location_country, '') ) AS location")
+    		IFNULL(m.location_country, '') ) AS location,
+    		count(vl.vid) AS num_likes")
     	->leftJoin('metadata AS m', 'm.vid', '=', 'v.id')
     	->leftJoin('users AS u', 'v.uploaded_by_uid', '=', 'u.id')
     	->leftJoin('video_likes AS vl', 'v.id', '=', 'vl.vid')
+    	->orderBy('v.id', 'desc')
+    	->groupBy("v.id", "v.title", "v.file_name", "v.original_file_name", "v.duration",
+    	"v.size", "v.format", "v.bitrate", "v.uploaded_by_uid", "u.name", "m.keywords",
+    	"m.location_city", "m.location_stateprovince", "m.location_country", "vl.vid")
     	->get();
-
-
-    	/*echo "<pre>";
-    	var_dump($videos);
-    	die();*/
+    	
 
     	return view('uploads', ['videos' => $videos]);
     }
@@ -143,12 +129,45 @@ created_at*/
     	if( empty(Auth::id()) || Auth::id() < 1 ){
     		return redirect('login');
     	} else {
-    		//return "fools = " . Auth::id();
-
     		return view('uploader');
-    		//return view('layouts.app');
     	}
     }
+
+    public function videolikeajax(Request $request){
+    	list($vid, $uid) = explode(",", $request->ids);
+
+    	//find out if this particular like already exists
+		$existingLike = DB::table('video_likes')
+		->selectRaw("id")
+		->where([
+			['uid', '=', $uid],
+			['vid', '=', $vid],
+		])->get();
+
+		//we should like how there is an if clause here.  avoids errors.
+		if( count($existingLike) < 1 ){
+			DB::table('video_likes')->insert(
+				['uid' => $uid,
+				'vid' => $vid,
+				'created_at' => new \DateTime(),
+				'updated_at' => new \DateTime() ]
+			);
+		}
+    }
+
+    public function videounlikeajax(Request $request){
+    	list($vid, $uid) = explode(",", $request->ids);
+
+    	var_dump( explode(",", $request->ids) );
+
+		DB::table('video_likes')
+		->where([
+			['uid', '=', $uid],
+			['vid', '=', $vid],
+		])
+		->delete();
+    }
+
 
     public function __construct(){
     	require_once( base_path() . '/getid3/getid3.php');

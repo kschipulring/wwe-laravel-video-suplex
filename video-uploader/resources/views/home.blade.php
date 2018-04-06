@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
 <?php 
+
 if( empty($message) ){
-    $message = $_GET["message"];
+    if(! empty($_GET["message"]) ){
+        $message = $_GET["message"];
+    }else{
+        $message = "";
+    }
 }
 
 $dec_msg = base64_decode( trim($message) );

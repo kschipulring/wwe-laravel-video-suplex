@@ -24,14 +24,13 @@ Route::get('/videosuploaderinternal', function () {
 	return view("partials.uploader-form-internal");
 });
 
-
-/*
-Route::get('/videosuploaded', function () {
-	return view("uploads");
-});
-*/
-
 Route::get('/videosuploaded', 'VideosController@vidlist');
+
+
+//for handling ajax requests
+Route::get('/videolikeajax', 'VideosController@videolikeajax');
+
+Route::get('/videounlikeajax', 'VideosController@videounlikeajax');
 
 
 Auth::routes();

@@ -2,7 +2,29 @@
 
 @section('titlesupplment') list of uploaded videos @endsection
 
+<?php
+//logged in user id
+$userid = Auth::id();
+?>
+
+
+@section('headtag')
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="{{ asset('public/css/upload-list.css') }}" rel="stylesheet" />
+
+<script>
+window.videoLikeAjaxPath = "{{ url('/videolikeajax') }}";
+window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
+</script>
+<script src="{{ asset('public/js/upload-list.js') }}"></script>
+@endsection
+
+
 @section('content')
+    <div id="lightbox">
+        <div id="videocontent"> </div>
+        <h2>Click to close</h2>
+    </div>
 
     @if(!$videos->isEmpty())
         <h1>Complete List of Uploaded Videos</h1>
@@ -19,6 +41,7 @@
                         <th>Bitrate</th>
                         <th>Keywords</th>
                         <th>Location</th>
+                        <th>Like?</th>
                         <th>Likes</th>
                         <th>Uploaded By</th>
                     </tr>
@@ -27,15 +50,34 @@
                     @foreach ($videos as $video)
                         <tr>
                             <td>{{ $video->title }}</td>
-                            <td>{{ $video->original_file_name }}</td>
+                            <td>
+                                <a href="<?php echo asset('storage/app/' . $video->file_name) ?>" class="lightbox_trigger">
+                                    {{ $video->original_file_name }}
+                                </a>
+                            </td>
                             <td> <?php echo date('H:i:s', mktime(0, 0, $video->duration)) ?> </td>
                             <td> <?php echo round($video->size / pow(1024, 2), 2) ?> mb</td>
                             <td>{{ $video->format }}</td>
                             <td><?php echo round($video->bitrate / 1024, 2) ?> kbs</td>
                             <td>{{ $video->keywords }}</td>
                             <td>{{ $video->location }}</td>
-                            <td>likes</td>
-                            <td><a href="<?php echo url("/user/{$video->uploaded_by_uid}") ?>">{{ $video->username }}</a></td>
+                            <td>
+                                <div id="liked_{{$video->id}}">
+                                    <button type="button" class="btn btn-default like_trigger" id="like_{{$video->id}}" rel="{{$video->id}},{{$userid}}">
+                                        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                                    </button>
+
+                                    <button type="button" class="btn btn-default unlike_trigger" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$userid}}">
+                                        <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
+                                    </button>
+                                </div>
+                            </td>
+                            <td>{{ $video->num_likes }} likes</td>
+                            <td>
+                                <a href="<?php echo url("/user/{$video->uploaded_by_uid}") ?>" class="lightbox_trigger">
+                                    {{ $video->username }}
+                                </a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

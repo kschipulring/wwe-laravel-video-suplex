@@ -14,6 +14,9 @@
 
     <title>{{ config('app.name', 'WWE Laravel Video Uploader') }} - @yield('titlesupplment')</title>
 
+    <!-- Scripts -->
+    <script src="{{ asset('public/js/app.js') }}"></script>
+
     <script src="{{ asset('public/js/vue.1.0.16.js') }}"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
@@ -99,8 +102,6 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
     @yield('endscriptfooter')
     
 </body>

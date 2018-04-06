@@ -18,6 +18,8 @@ class CreateVideoLikesTable extends Migration
             $table->integer('uid');
             $table->integer('vid');
             $table->timestamps();
+
+            $table->unique(['uid', 'vid']);
         });
     }
 
