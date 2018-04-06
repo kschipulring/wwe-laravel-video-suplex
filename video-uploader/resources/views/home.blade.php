@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+<?php 
+if( empty($message) ){
+    $message = $_GET["message"];
+}
+
+$dec_msg = base64_decode( $message );
+?>
+
 @section('content')
 <div class="container">
     <div class="row">
@@ -14,7 +22,10 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!  
+
+
+                    {{ $dec_msg }}
                 </div>
             </div>
         </div>
