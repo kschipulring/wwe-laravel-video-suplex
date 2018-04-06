@@ -20,6 +20,10 @@ Route::get('/videosuploader', function () {
 	return view("uploader");
 });
 
+Route::get('/videosuploaderinternal', function () {
+	return view("partials.uploader-form-internal");
+});
+
 Route::get('/videosuploaded', function () {
 	return view("uploads");
 });
@@ -27,3 +31,5 @@ Route::get('/videosuploaded', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/uploadvideo', 'VideosController@upload');
