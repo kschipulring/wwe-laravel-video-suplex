@@ -17,9 +17,7 @@ class CreateMetadataTable extends Migration
             $table->increments('id');
             $table->integer('vid');
             $table->mediumText('keywords')->nullable();
-            $table->mediumText('location_city')->nullable();
-            $table->mediumText('location_stateprovince')->nullable();
-            $table->string('location_country')->nullable();
+            $table->mediumText('location')->nullable();
             $table->timestamps();
         });
     }

@@ -4,7 +4,10 @@
 
 <?php
 //logged in user id
-$userid = Auth::id();
+$authId = Auth::id();
+
+$likeClass = "";
+$unlikeClass = "";
 ?>
 
 
@@ -63,11 +66,21 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                             <td>{{ $video->location }}</td>
                             <td>
                                 <div id="liked_{{$video->id}}">
-                                    <button type="button" class="btn btn-default like_trigger" id="like_{{$video->id}}" rel="{{$video->id}},{{$userid}}">
+                                    <?php
+                                    if($video->ifcurrentuserlike == 1){
+                                        $likeClass = "show";
+                                        $unlikeClass = "hide";
+                                    }else{
+                                        $likeClass = "hide";
+                                        $unlikeClass = "show";
+                                    }
+                                    ?>
+
+                                    <button type="button" class="btn btn-default like_trigger {{$likeClass}}" id="like_{{$video->id}}" rel="{{$video->id}},{{$authId}}">
                                         <span class="glyphicon glyphicon-thumbs-up"></span> Like
                                     </button>
 
-                                    <button type="button" class="btn btn-default unlike_trigger" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$userid}}">
+                                    <button type="button" class="btn btn-default unlike_trigger {{$unlikeClass}}" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$authId}}">
                                         <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
                                     </button>
                                 </div>
