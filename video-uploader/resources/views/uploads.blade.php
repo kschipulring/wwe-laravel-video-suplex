@@ -44,7 +44,13 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                         <th>Bitrate</th>
                         <th>Keywords</th>
                         <th>Location</th>
-                        <th>Like?</th>
+                        <th>
+                        @if (Auth::check()) 
+                            Like?
+                        @else
+                            Please log in to like
+                        @endif
+                        </th>
                         <th>Likes</th>
                         <th>Uploaded By</th>
                     </tr>
@@ -65,9 +71,10 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                             <td>{{ $video->keywords }}</td>
                             <td>{{ $video->location }}</td>
                             <td>
+                                @if (Auth::check())
                                 <div id="liked_{{$video->id}}">
                                     <?php
-                                    if($video->ifcurrentuserlike == 1){
+                                    if($video->ifcurrentuserlike != 1){
                                         $likeClass = "show";
                                         $unlikeClass = "hide";
                                     }else{
@@ -76,16 +83,17 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                                     }
                                     ?>
 
-                                    <button type="button" class="btn btn-default like_trigger {{$likeClass}}" id="like_{{$video->id}}" rel="{{$video->id}},{{$authId}}">
+                                    <button type="button" class="btn btn-default like_trigger {{$likeClass}}" id="like_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
                                         <span class="glyphicon glyphicon-thumbs-up"></span> Like
                                     </button>
 
-                                    <button type="button" class="btn btn-default unlike_trigger {{$unlikeClass}}" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$authId}}">
+                                    <button type="button" class="btn btn-default unlike_trigger {{$unlikeClass}}" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
                                         <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
                                     </button>
                                 </div>
+                                @endif
                             </td>
-                            <td>{{ $video->num_likes }} likes</td>
+                            <td><span id="num_likes_{{$video->id}}">{{ $video->num_likes }}</span> likes</td>
                             <td>
                                 <a href="<?php echo url("/user/{$video->uploaded_by_uid}") ?>" class="lightbox_trigger">
                                     {{ $video->username }}

@@ -47,16 +47,55 @@ jQuery(document).ready(function($) {
     $('.like_trigger').click(function(e) {
         e.preventDefault();
 
-        //var tempArr = $(this).attr("rel").split(",");
-
+        //user id and video id pair associated with this button
         var ids = $(this).attr("rel");
+
+        //get the id attribute
+        var domId = $(this).attr("id");
+
+        var vid = $(this).attr("vid");
 
         $.ajax({
             url: window.videoLikeAjaxPath + '?ids=' + ids,
             context: document.body
         }).done(function(data) {
-            console.log("diet joke = ", $(this) );
-            
+            $( "#" + domId ).addClass( "hide" ).removeClass("show");
+
+            console.log( $( "#" + domId ).next().attr("id")  );
+
+            $( "#" + domId ).next().addClass( "show" ).removeClass("hide");
+
+            //increase the number of likes for this video
+            var num_likes = parseInt( $("#num_likes_"+vid).text() );
+
+            $("#num_likes_"+vid).text( num_likes+1 ); 
+        });
+    });
+
+    //this is unlikable
+    $('.unlike_trigger').click(function(e) {
+        e.preventDefault();
+
+        var ids = $(this).attr("rel");
+
+        var domId = $(this).attr("id");
+
+        var vid = $(this).attr("vid");
+
+        $.ajax({
+            url: window.videoUnlikeAjaxPath + '?ids=' + ids,
+            context: document.body
+        }).done(function(data) {
+            $( "#" + domId ).addClass( "hide" ).removeClass("show");
+
+            console.log( $( "#" + domId ).prev().attr("id")  );
+
+            $( "#" + domId ).prev().addClass( "show" ).removeClass("hide");
+
+            //lower the number of likes for this video
+            var num_likes = parseInt( $("#num_likes_"+vid).text() );
+
+            $("#num_likes_"+vid).text( num_likes-1 );         
         });
     });
 });

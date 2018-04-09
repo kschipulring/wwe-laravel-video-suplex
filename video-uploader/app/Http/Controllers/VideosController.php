@@ -164,57 +164,29 @@ class VideosController extends Controller
     }
 
     public function vidlist(){
-    	$authId = Auth::id();
+    	
+    	//no one logged in
+    	if( empty(Auth::id()) || Auth::id() < 1 ){
+    		$authId = 0;
+    	}else{
+    		//someone is logged in
+    		$authId = Auth::id();
+    	}
 
     	$videos = DB::table('videos AS v')
-    	->selectRaw("DISTINCT v.id, v.title, v.file_name, v.original_file_name, v.duration,
-    	v.size, v.format, v.bitrate, v.uploaded_by_uid, u.name as username,
-    	IFNULL(m.keywords,'') AS keywords, CONCAT(IFNULL(m.location_city, ''),
-    	', ',  IFNULL(m.location_stateprovince, ''), ', ',
-    	IFNULL(m.location_country, '') ) AS location, count(vl.vid) AS num_likes,
-    	IF( (vl2.vid = v.id AND vl2.uid = $authId), 1, 0) AS ifcurrentuserlike")
+    	->selectRaw("( SELECT COUNT(vid) FROM `video_likes` 
+    		WHERE vid = v.id AND uid = {$authId}) AS ifcurrentuserlike,
+    		(SELECT COUNT(vid) FROM `video_likes` WHERE
+    	vid = v.id) AS num_likes, v.*, m.keywords,
+    	m.location, u.name as username")
     	->leftJoin('metadata AS m', 'm.vid', '=', 'v.id')
     	->leftJoin('users AS u', 'v.uploaded_by_uid', '=', 'u.id')
-    	->leftJoin('video_likes AS vl', 'v.id', '=', 'vl.vid')
-    	->leftJoin('video_likes AS vl2', 'v.id', '=', 'vl2.vid')
     	->orderBy('v.id', 'desc')
-    	->groupBy( "v.title", "v.file_name", "v.original_file_name", "v.duration",
-    	"v.size", "v.format", "v.bitrate", "v.uploaded_by_uid", "u.name", "m.keywords",
-    	"m.location_city", "m.location_stateprovince", "m.location_country", "vl.vid",
-    	"vl2.vid", "vl2.uid", "v.id")
     	->get();
-	
 
-/*
-    	$videos = DB::table('videos AS v')
-    	->selectRaw("DISTINCT v.id, v.title, v.file_name, v.original_file_name, v.duration,
-    	v.size, v.format, v.bitrate, v.uploaded_by_uid, u.name as username,
-    	IFNULL(m.keywords,'') AS keywords, CONCAT(IFNULL(m.location_city, ''),
-    	', ',  IFNULL(m.location_stateprovince, ''), ', ',
-    	IFNULL(m.location_country, '') ) AS location, count(vl.vid) AS num_likes,
-    	IF( (vl2.vid = v.id AND vl2.uid = $authId), 1, 0) AS ifcurrentuserlike")
-    	->leftJoin('metadata AS m', 'm.vid', '=', 'v.id')
-    	->leftJoin('users AS u', 'v.uploaded_by_uid', '=', 'u.id')
-    	->leftJoin('video_likes AS vl', 'v.id', '=', 'vl.vid')
-    	->leftJoin('video_likes AS vl2', 'v.id', '=', 'vl2.vid')
-    	->orderBy('v.id', 'desc')
-    	->groupBy( DB::raw("v.id") )
-    	->get();
-    	*/
-
-    	echo "<pre>";
-    	var_dump( $videos );
-//DB::enableQueryLog();
-
-//var_dump( dd(DB::getQueryLog()) );
-
-    	//echo $videos->toSql();
-
-    	//print_r( get_class_methods( $videos ) );
-
-    	//print_r( get_object_vars( $videos ) );
-
-    	die();
+    	/*echo "<pre>";
+    	var_dump($videos);
+    	die("</pre>");*/
 
     	return view('uploads', ['videos' => $videos]);
     }
