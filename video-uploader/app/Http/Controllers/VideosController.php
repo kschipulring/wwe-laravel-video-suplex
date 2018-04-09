@@ -54,6 +54,9 @@ class VideosController extends Controller
         //the uploaded file
     	$file = $request->file('videofile');
 
+    	//var_dump($request);
+    	//die( $request->use_meta_title );
+
 
         $getID3 = new \getID3;
 
@@ -64,6 +67,17 @@ class VideosController extends Controller
 
 		//now that it is stored, it can be analyzed
 		$ThisFileInfo = $getID3->analyze( storage_path("app/" . $path) );
+
+		//the regular title from the title field in the form
+		$videoTitle = $request->title;
+
+		//title from the meta tags will be preferred if that checkbox is checked AND there is a title section in the tag
+		if( !empty($request->use_meta_title) && $request->use_meta_title == "on" ){
+
+			if( array_key_exists("title", $ThisFileInfo) && !empty($ThisFileInfo["title"])){
+				$videoTitle = $ThisFileInfo["title"];
+			}
+		}
 
 
 		$filesize = (!empty($ThisFileInfo["filesize"]))? $ThisFileInfo["filesize"] : "";
@@ -85,7 +99,7 @@ class VideosController extends Controller
 
 		//db insert for the basic video information
 		DB::table('videos')->insert(
-			['title' => $request->title,
+			['title' => $videoTitle,
 			'file_name' => $path,
 			'original_file_name' => $file->getClientOriginalName(),
 			'duration' => $playtime_seconds,
@@ -139,12 +153,7 @@ class VideosController extends Controller
 			}
 		}
 
-
-
-		//echo "<pre> location =" . $location;
-
-		//die( $somecoords );
-
+		//meta section
 		$keywords = (!empty($ThisFileInfo['comments']))? json_encode($ThisFileInfo['comments']) : "";
 
 		
@@ -157,7 +166,7 @@ class VideosController extends Controller
 			'updated_at' => new \DateTime() ]
 		);
 		
-
+		//message for the next page
 		$message = base64_encode( $file->getClientOriginalName() . " has been uploaded!" );
 
 		return redirect()->route('home', ['message' => $message]);

@@ -5,7 +5,7 @@ placeholder="your awesome title" autofocus />
 
 <div class="checkbox mb-3">
   <label>
-    <input type="checkbox" id="checkbox" v-model="disabled" /> <sub>Attempt to use title from video meta data if one is present</sub>
+    <input type="checkbox" id="checkbox" v-model="disabled" name="use_meta_title" /> <sub>Attempt to use title from video meta data if one is present</sub>
   </label>
 </div>
 

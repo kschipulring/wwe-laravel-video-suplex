@@ -23,6 +23,7 @@
 
       <div id="vueuploadapp">
         <!-- only is populated by ajax after jquery is fully loaded and ready. Yes, Vue is tag team partner to jQuery here :( -->
+        loading, please wait...
       </div>
     </form>
 @endsection
