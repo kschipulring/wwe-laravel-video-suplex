@@ -98,4 +98,38 @@ jQuery(document).ready(function($) {
             $("#num_likes_"+vid).text( num_likes-1 );         
         });
     });
+
 });
+
+
+function showPosition(latlon, eid) {  
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyAjVzCkrxEegU6CotWGUEVlL0VIzSQbIds";
+    document.getElementById(eid).innerHTML = "<img src='"+img_url+"' />";
+}
+
+function mapGroup(){
+    console.log("you are a cunt");
+
+    /*jQuery(document).ready(function($){
+
+        console.log("i want a glazed donut");
+
+        $(".mapholder").each(function(){
+            var eid = $( this ).attr("id");
+
+            var vid = $( this ).attr("vid");
+
+            var latlon = $("#location_"+vid).text();
+
+            showPosition(latlon, eid);
+        });
+    });*/
+
+
+    /*var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);*/
+}

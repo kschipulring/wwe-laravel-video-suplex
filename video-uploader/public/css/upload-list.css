@@ -48,3 +48,12 @@ body {
 .unlike_trigger{
     display:none;
 }
+
+.location_geo{
+    font-size:10px;
+    font-color:gray;
+}
+
+.location_geo:before{
+    content:"location: ";
+}

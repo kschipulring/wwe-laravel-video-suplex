@@ -19,7 +19,9 @@ $unlikeClass = "";
 window.videoLikeAjaxPath = "{{ url('/videolikeajax') }}";
 window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
 </script>
+
 <script src="{{ asset('public/js/upload-list.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjVzCkrxEegU6CotWGUEVlL0VIzSQbIds&callback=mapGroup"></script>
 @endsection
 
 
@@ -28,6 +30,8 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
         <div id="videocontent"> </div>
         <h2>Click to close</h2>
     </div>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
 
     @if(!$videos->isEmpty())
         <h1>Complete List of Uploaded Videos</h1>
@@ -69,7 +73,21 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                             <td>{{ $video->format }}</td>
                             <td><?php echo round($video->bitrate / 1024, 2) ?> kbs</td>
                             <td>{{ $video->keywords }}</td>
-                            <td>{{ $video->location }}</td>
+                            <td>
+                                @if ( $video->location )
+                                    <iframe
+                                    width="200"
+                                    height="200"
+                                    frameborder="0" style="border:0"
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjVzCkrxEegU6CotWGUEVlL0VIzSQbIds
+                                    &q={{$video->location}}" allowfullscreen>
+                                    </iframe>
+                                    <br/>
+                                    <span id="location_{{$video->id}}" class="location_geo">
+                                        {{ $video->location }}
+                                    </span>
+                                @endif
+                            </td>
                             <td>
                                 @if (Auth::check())
                                 <div id="liked_{{$video->id}}">
@@ -116,7 +134,6 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
 
         <a href="{{ url('/videosuploader') }}">Would you like to upload one?</a>
     @endif
-
 @endsection
 
 
