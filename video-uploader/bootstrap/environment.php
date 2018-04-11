@@ -33,21 +33,9 @@ $env = $app->detectEnvironment(function(){
 
 	if (getenv('APP_ENV') && file_exists($envFolder.'/.' .getenv('APP_ENV') .'.env')) {
 
-
-
 		$dotenv = new Dotenv\Dotenv( dirname(__DIR__), "." . $setEnv.'.env');
 
-
 		$dotenv->load();
-
-		/*echo "<pre>";
-		var_dump( $dotenv );
-
-		die( "the army" );
-
-		//die( "getenv('APP_ENV') = " . '.' . getenv('APP_ENV') . '.env' );
-
-		Dotenv\Dotenv::load($envFolder . '/', '.' . getenv('APP_ENV') . '.env');*/
 	} 
 
 });
