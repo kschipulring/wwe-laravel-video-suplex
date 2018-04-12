@@ -96,11 +96,11 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                                     }
                                     ?>
 
-                                    <button type="button" class="btn btn-default like_trigger {{$likeClass}}" id="like_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
+                                    <button type="button" class="btn btn-danger like_trigger {{$likeClass}}" id="like_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
                                         <span class="glyphicon glyphicon-thumbs-up"></span> Like
                                     </button>
 
-                                    <button type="button" class="btn btn-default unlike_trigger {{$unlikeClass}}" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
+                                    <button type="button" class="btn btn-danger unlike_trigger {{$unlikeClass}}" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
                                         <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
                                     </button>
                                 </div>

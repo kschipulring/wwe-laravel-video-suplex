@@ -7,7 +7,7 @@
     <meta name="description" content="Video Uploader">
 
     <meta name="author" content="Karl Schipul">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="{{ asset('public/favicon.ico') }}" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
