@@ -12,8 +12,8 @@ $unlikeClass = "";
 
 
 @section('headtag')
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="{{ asset('public/css/upload-list.css') }}" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ asset('public/css/upload-list.css') }}" />
 
 <script>
 window.videoLikeAjaxPath = "{{ url('/videolikeajax') }}";
@@ -30,8 +30,6 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
         <div id="videocontent"> </div>
         <h2>Click to close</h2>
     </div>
-
-    <div id="googleMap" style="width:100%;height:400px;"></div>
 
     @if(!$videos->isEmpty())
         <h1>Complete List of Uploaded Videos</h1>
@@ -75,10 +73,7 @@ window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
                             <td>{{ $video->keywords }}</td>
                             <td>
                                 @if ( $video->location )
-                                    <iframe
-                                    width="200"
-                                    height="200"
-                                    frameborder="0" style="border:0"
+                                    <iframe class="google_iframe"
                                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjVzCkrxEegU6CotWGUEVlL0VIzSQbIds
                                     &q={{$video->location}}" allowfullscreen>
                                     </iframe>

@@ -57,3 +57,27 @@ body {
 .location_geo:before{
     content:"location: ";
 }
+
+.google_iframe{
+    border:0;
+    width:200px;
+    height:200px;
+}
+
+@media screen and (max-height: 940px) {
+  #app{
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  #app{
+    margin-top: 340px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  #app{
+    margin-top: 500px;
+  }
+}

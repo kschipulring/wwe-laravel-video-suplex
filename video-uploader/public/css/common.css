@@ -15,7 +15,7 @@ body {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
   padding-bottom: 40px;
   background-color: #f5f5f5;
 }
@@ -28,6 +28,7 @@ body {
 nav.sticky-top{
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 nav .nav-image{
@@ -72,4 +73,13 @@ nav.site-header:hover a:hover {
 	  margin-top: 15px;
 	  margin-bottom: 15px;
 	}
+}
+
+#app{
+  width: 100%;
+}
+
+.table-responsive{
+    width: 90%;
+    margin-left: 5%;
 }
