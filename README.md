@@ -32,17 +32,17 @@ You are welcome to create your own account to test and verify for yourself the f
 -The system currently decides on which of these 2 files based on which domain it detects itself to be from */bootstrap/environment.php* around lines 20 and 21.  Obviously for your own non localhost environment, you need to change the switch statement present to something other than the *'3ringprototype.com'* domains.  Those are for our server and not anyone elses. Replace these domains listed here with whatever dot com domain you plan to use *(without 'http://' or 'www' or anything else not part of your core domain or subdomain that you would use for this project)*.
 - You will need to get the correct email server settings (as mentioned above).  You will need to change the following:
 
-MAIL_DRIVER=smtp
+>MAIL_DRIVER=smtp
 
-MAIL_HOST=mailtrap.io
+>MAIL_HOST=mailtrap.io
 
-MAIL_PORT=2525
+>MAIL_PORT=2525
 
-MAIL_USERNAME=null
+>MAIL_USERNAME=null
 
-MAIL_PASSWORD=null
+>MAIL_PASSWORD=null
 
-MAIL_ENCRYPTION=null
+>MAIL_ENCRYPTION=null
 
 ... to settings that apply to your desired account.
 
