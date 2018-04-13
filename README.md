@@ -18,6 +18,7 @@ You are welcome to create your own account to test and verify for yourself the f
 - Composer for ability to common Laravel commands and install 'Vendor' folder dependencies.  For Javascript, Node and NPM developers, this has a similar role to NPM commands, 'node_modules' folder and the package.json configuration file.  But Composer has its own .json file that performs this role.
 - Git command line (git bash), but that is fairly obvious, especially, if you are already visiting Github.com.
 - an email account with working password, known connection type and port.  If you find this sort of thing to be a hassle, then perhaps try an existing (but expendable) gmail account
+- google maps app key if you wish to use the google maps feature on your own site
 
 ### SETUP in your own environment
 
@@ -51,6 +52,6 @@ You are welcome to create your own account to test and verify for yourself the f
  - 2. run following command in the command line: **php artisan migrate**.  This creates the tables with the schemas on the database.  If you run into an issue, which occurs right after migrating users sometimes, then move the users and create_password migration files back to the 'old' directory.  Afterwards, run **php artisan migrate** again.  This should do the remaining migrations.
  
  - **or**
- - Schema import from attached 'schema.sql' file.  Hopefully, you have something to manage your databases such as 'PHPmyAdmin', 'Navicat' or 'MySQL Workbench'.  Using this, pick your desired database as mentioned above (and referenced in your .env files).  Import the 'schema.sql' file into your database.  Also for security reasons, there is no actual data in this .sql file.
+ - Schema import from attached 'schema.sql' file.  Hopefully, you have something to manage your databases such as 'PHPmyAdmin', 'Navicat' or 'MySQL Workbench'.  Using this, pick your desired database as mentioned above (and referenced in your .env files).  Import the 'schema.sql' file into your database.  Also for security reasons, there is no actual data in this .sql file, merely the schema.
  
 7. On your desired server where all this has been installed, navigate to the respective folder from the server for wwe-laravel-video-suplex/video-uploader.
