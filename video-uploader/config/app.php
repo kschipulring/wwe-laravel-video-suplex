@@ -1,7 +1,9 @@
 <?php
 
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$domainName = $_SERVER['HTTP_HOST'];
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ||
+( !empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ) ? "https://" : "http://";
+
+$domainName = ( !empty($_SERVER['HTTP_HOST']) )? $_SERVER['HTTP_HOST'] : "localhost";
 $thisSite = $protocol.$domainName;
 
 

@@ -13,18 +13,15 @@
 $env = $app->detectEnvironment(function(){
 	$envFolder = dirname(__DIR__);
 
+	$setEnv = "local";
 
-	switch( $_SERVER['HTTP_HOST'] ){
-		case "localhost":
-			$setEnv = "local";
-			break;
-		case "3ringprototype.com":
-		case "wwe_video_suplex.3ringprototype.com":
-			$setEnv = "production";
-			break;
-		default:
-			$setEnv = "";
-			break;
+	if( !empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) ){
+		switch( $_SERVER['HTTP_HOST'] ){
+			case "3ringprototype.com":
+			case "wwe_video_suplex.3ringprototype.com":
+				$setEnv = "production";
+				break;
+		}
 	}
 
 

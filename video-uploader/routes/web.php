@@ -38,3 +38,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/uploadvideo', 'VideosController@upload');
+
+Route::get('/verifyemail/{token}', 'Auth\RegisterController@verify');

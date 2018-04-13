@@ -9,6 +9,10 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 use App\Http\Helpers;
 
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\Request;
+use App\Jobs\SendVerificationEmail;
+
 class RegisterController extends Controller
 {
     /*
@@ -64,18 +68,43 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-
-        /*echo "<pre>";
-        var_dump( $_SERVER );
-        var_dump( $_REQUEST );
-
-        die( 'Helpers::getRealIpAddr() = ' . Helpers::getRealIpAddr() );*/
-
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'ipaddress' => Helpers::getRealIpAddr()
+            'ipaddress' => Helpers::getRealIpAddr(),
+            'email_token' => base64_encode($data['email'])
         ]);
     }
+
+    /**
+    * Handle a registration request for the application.
+    *
+    * @param \Illuminate\Http\Request $request
+    * @return \Illuminate\Http\Response
+    */
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+        event(new Registered($user = $this->create($request->all())));
+        dispatch(new SendVerificationEmail($user));
+        return view('email.verification');
+    }
+
+    /**
+    * Handle a registration request for the application, but after they hit the link in the email.
+    *
+    * @param $token
+    * @return \Illuminate\Http\Response
+    */
+    public function verify($token)
+    {
+        $user = User::where('email_token',$token)->first();
+        $user->verified = 1;
+        if($user->save()){
+            return view('email.emailconfirm',['user'=>$user]);
+        }
+    }
+
+
 }

@@ -62,6 +62,14 @@ nav.site-header:hover a:hover {
   text-decoration: none;
 }
 
+nav.site-header .dropdown-menu li a:hover{
+  color: black;
+}
+
+nav.site-header:hover .dropdown-menu{
+  display:block;
+}
+
 
 @media (min-width: 700px){
 	nav .nav-image{
