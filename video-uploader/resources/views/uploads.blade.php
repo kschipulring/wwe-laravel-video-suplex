@@ -18,10 +18,11 @@ $unlikeClass = "";
 <script>
 window.videoLikeAjaxPath = "{{ url('/videolikeajax') }}";
 window.videoUnlikeAjaxPath = "{{ url('/videounlikeajax') }}";
+window.googleMapsKey = "{{ env('GOOGLE_MAPS_KEY') }}";
 </script>
 
 <script src="{{ asset('public/js/upload-list.js') }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjVzCkrxEegU6CotWGUEVlL0VIzSQbIds&callback=mapGroup"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_KEY') }}&callback=mapGroup"></script>
 @endsection
 
 

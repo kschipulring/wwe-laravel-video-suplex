@@ -104,7 +104,7 @@ jQuery(document).ready(function($) {
 
 function showPosition(latlon, eid) {  
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&key=AIzaSyAjVzCkrxEegU6CotWGUEVlL0VIzSQbIds";
+    +latlon+"&zoom=14&size=400x300&key="+window.googleMapsKey;
     document.getElementById(eid).innerHTML = "<img src='"+img_url+"' />";
 }
 
