@@ -18,6 +18,7 @@ You are welcome to create your own account to test and verify for yourself the f
 - Composer for ability to common Laravel commands and install 'Vendor' folder dependencies.  For Javascript, Node and NPM developers, this has a similar role to NPM commands, 'node_modules' folder and the package.json configuration file.  But Composer has its own .json file that performs this role.
 - Git command line (git bash), but that is fairly obvious, especially, if you are already visiting Github.com.
 - an email account with working password, known connection type and port.  If you find this sort of thing to be a hassle, then perhaps try an existing (but expendable) gmail account
+- google maps app key if you wish to use the google maps feature on your own site
 
 ### SETUP in your own environment
 
