@@ -27,7 +27,7 @@ You are welcome to create your own account to test and verify for yourself the f
 4. run the following command to install dependencies:
 **php composer.phar install**
 
-5. configure your own .env files.  This app uses both a *.local.env* and also a *.production.env* file for different server environments. **.env.example** from the main part of the directory is a good file to work on.
+5. configure your own .env files.  This app uses both a *.local.env* and also a *.production.env* file for different server environments. **.env.example** from the main part of the directory is a good file to work from.
 - Unfortunately, for security reasons, I do not have my own actual .env files as part of this repository.
 -The system currently decides on which of these 2 files based on which domain it detects itself to be from */bootstrap/environment.php* around lines 20 and 21.  Obviously for your own non localhost environment, you need to change the switch statement present to something other than the *'3ringprototype.com'* domains.  Those are for our server and not anyone elses. Replace these domains listed here with whatever dot com domain you plan to use *(without 'http://' or 'www' or anything else not part of your core domain or subdomain that you would use for this project)*.
 - You will need to get the correct email server settings (as mentioned above).  You will need to change the following:
