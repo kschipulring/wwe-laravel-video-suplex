@@ -109,7 +109,7 @@ window.googleMapsKey = "{{ env('GOOGLE_MAPS_KEY') }}";
                             </td>
                             <td><span id="num_likes_{{$video->id}}">{{ $video->num_likes }}</span> likes</td>
                             <td>
-                                <a href="<?php echo url("/user/{$video->uploaded_by_uid}") ?>" class="lightbox_trigger">
+                                <a href="<?php echo url("/user/{$video->uploaded_by_uid}") ?>">
                                     {{ $video->username }}
                                 </a>
                             </td>

@@ -32,6 +32,12 @@ Route::get('/videolikeajax', 'VideosController@videolikeajax');
 
 Route::get('/videounlikeajax', 'VideosController@videounlikeajax');
 
+/*
+Route::get('user/{id}', function ($id) {
+	return view("user", ['user' => $id]);
+});*/
+
+Route::get('/user/{id}', 'UserController@getUser');
 
 Auth::routes();
 
