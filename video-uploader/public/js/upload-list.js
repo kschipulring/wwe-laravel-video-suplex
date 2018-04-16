@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
     $('#lightbox').on('click', function() {
         $('#lightbox').hide();
 
-        $('#videocontent').html(""); console.log("actingg like a jerk");
+        $('#videocontent').html("");
     });
 
 
