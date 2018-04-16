@@ -51,7 +51,8 @@ You are welcome to create your own account to test and verify for yourself the f
  - 1. Migration technique.  Navigate to 'database/migrations' folder within the 'video-uploader' folder.  Move files from the *'old'* folder to the main parent *'migrations'* folder.
  - 2. run following command in the command line: **php artisan migrate**.  This creates the tables with the schemas on the database.  If you run into an issue, which occurs right after migrating users sometimes, then move the users and create_password migration files back to the 'old' directory.  Afterwards, run **php artisan migrate** again.  This should do the remaining migrations.
  
- - **or**
+  **or**
+  
  - Schema import from attached 'schema.sql' file.  Hopefully, you have something to manage your databases such as 'PHPmyAdmin', 'Navicat' or 'MySQL Workbench'.  Using this, pick your desired database as mentioned above (and referenced in your .env files).  Import the 'schema.sql' file into your database.  Also for security reasons, there is no actual data in this .sql file, merely the schema.
  
 7. On your desired server where all this has been installed, navigate to the respective folder from the server for wwe-laravel-video-suplex/video-uploader.
