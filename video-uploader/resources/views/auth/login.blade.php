@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('headtag')
+
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row">
@@ -8,7 +12,8 @@
                 <div class="panel-heading">Login</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('login') }}" id="recapForm1">
+
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -51,7 +56,14 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-danger">
+
+                                @if ($errors->has('recaptcha'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('recaptcha') }}</strong>
+                                    </span>
+                                @endif
+
+                                <button type="submit" class="btn btn-danger" id="login_submit">
                                     Login
                                 </button>
 
@@ -73,4 +85,6 @@
         </div>
     </div>
 </div>
+
+<script src="{{ asset('public/js/simple-recaptcha.js?e=login_submit&f=recapForm1&k=') . env('RECAPTCHA_PUBLIC_KEY') }}"></script>
 @endsection
