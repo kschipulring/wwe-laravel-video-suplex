@@ -77,3 +77,141 @@ function qsParse(url){
 
 	return url_config;
 }
+
+/*
+load env, json and other resources.
+Though javascript files are not recommended.
+Use above function instead please
+*/
+function myAsyncFunction(url) {
+	return new Promise((resolve, reject) => {
+		const xhr = new XMLHttpRequest();
+		xhr.open("GET", url);
+		xhr.onload = () => resolve(xhr.responseText);
+		xhr.onerror = () => reject(xhr.statusText);
+		xhr.send();
+	});
+}
+
+
+function getJson(url, useLS){
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var myArr = JSON.parse(this.responseText);
+			//document.getElementById("demo").innerHTML = myArr[0];
+
+
+		}
+	};
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+}
+
+function setEnvFromSrc(url){
+
+	var envPromise = myAsyncFunction(url);
+
+	return envPromise.then((successMessage) => {
+		// successMessage is whatever we passed in the resolve(...) function above.
+		// It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+		console.log("Yay! " , successMessage);
+
+		var env_code = successMessage;
+
+		var env_split=env_code.split(/\n|\r/);
+		var temp_eq_split = [];
+		var env_obj = {};
+
+		for( var i in env_split ){
+			if( env_split[i].indexOf("=") != -1 ){
+				temp_eq_split = env_split[i].split("=");
+
+				env_obj[ temp_eq_split[0] ] = temp_eq_split[1];
+
+				localStorage.setItem(temp_eq_split[0], temp_eq_split[1] );
+			}
+		}
+
+		//for cache age comparison
+		localStorage.setItem("ENV_TIMESTAMP", Date.now() / 1000 );
+
+		return env_obj;
+	});
+}
+
+function getEnv( url ){
+	return new Promise((resolve, reject) => {
+		
+		//unix timestamp in seconds rather than miliseconds
+		var currentTime = Date.now() / 1000;
+
+		//by default, the maximum cache age is 600 seconds or 15 minutes
+		var cache_max_age = ( localStorage.getItem("CACHE_MAX_AGE_SECS") )?
+		parseInt( localStorage.getItem("CACHE_MAX_AGE_SECS") ) : 600;
+
+
+		//if the env cache either does not exist or is too old
+		if( localStorage.getItem("ENV_TIMESTAMP") === null ||
+			parseInt(localStorage.key("ENV_TIMESTAMP")) < (currentTime - cache_max_age)  ){
+			
+			resolve( setEnvFromSrc(url) );
+		}else{
+			resolve( localStorage );
+		}
+	});
+}
+
+/*
+ * great for dealing with an element that may or may not have loaded yet
+*/
+function elementPromise(id){
+	return new Promise((resolve, reject) => {
+
+		if( $( "#" + id ).length > 0 ){
+			resolve( $( "#" + id ) );
+		} else {
+
+			$(document).ready(function(){
+				if( $( "#" + id ).length > 0 ){
+					resolve( $( "#" + id ) );
+				} else {
+
+					if( $( "#" + id ).length > 0 ){
+						resolve( $( "#" + id ) );
+					}else{
+						var tempSI = setInterval(function(){
+
+							if( $( "#" + id ).length > 0 ){
+								clearInterval(tempSI);
+
+								resolve( $( "#" + id ) );
+							}
+						}, 250);
+					}
+				}
+			})
+		}
+	});
+}
+
+
+/*
+get the base dir.
+THE BASE DIR **MUST** be given to this script via url query string from the blade templates
+*/
+var bd_obj = qsParse( document.currentScript.src );
+
+var base_dir = decodeURIComponent(bd_obj.base_dir);
+
+//get the core .env settings
+window.envVarsProm = getEnv( base_dir + ".global.env" );
+
+
+/*
+envVarsProm.then((successObj) => {
+	console.log( 'successObj.getItem("ENV_TIMESTAMP") = ', successObj.getItem("ENV_TIMESTAMP") );
+
+	console.log( 'successObj = ', successObj );
+});
+*/

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('titlesupplment') Home  @endsection
+
 @section('headtag')
 
 @endsection
@@ -85,6 +87,8 @@
         </div>
     </div>
 </div>
+@endsection
 
-<script src="{{ asset('public/js/simple-recaptcha.js?e=login_submit&f=recapForm1&k=') . env('RECAPTCHA_PUBLIC_KEY') }}"></script>
+@section('endscriptfooter')
+    <?php echo RecaptchaLib::frontEndRender("login_submit", "recapForm1"); ?>
 @endsection

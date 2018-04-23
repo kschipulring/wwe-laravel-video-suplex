@@ -40,67 +40,18 @@ class LoginController extends Controller
         $this->middleware('guest', ['except' => 'logout']);
     }
 
-
-    protected function sendFailedRecaptchaResponse(Request $request, $errors){
-        $errors = ["recaptcha" => "recaptcha failed, because: " . implode(",", $errors) ];
-
-        if ($request->expectsJson()) {
-            return response()->json($errors, 422);
-        }
-
-        return redirect()->back()
-            ->withInput($request->only($this->username(), 'remember'))
-            ->withErrors($errors);
-    }
-
-
     public function login(Request $request){
 
         $data = $request->all();
 
-
         //for when there is recaptcha
         if( !empty($data["g-recaptcha-response"]) && strlen($data["g-recaptcha-response"]) > 1 ){
-            $privatekey = env('RECAPTCHA_PRIVATE_KEY');
-
-            $url = 'https://www.google.com/recaptcha/api/siteverify';
-
-
-            $fields = array(
-                'secret' => $privatekey,
-                'response' => $data["g-recaptcha-response"]
-            );
-
-
-            $fields_string = "";
-
-            //url-ify the data for the POST
-            foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
-            rtrim($fields_string, '&');
-
-            //open connection
-            $ch = curl_init();
-
-            //set the url, number of POST vars, POST data
-            curl_setopt($ch,CURLOPT_URL, $url);
-            curl_setopt($ch,CURLOPT_POST, count($fields));
-            curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
-            curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
-
-
-            //execute post
-            $result = curl_exec($ch);
-
-            //close connection
-            curl_close($ch);
-
-            //turn response into object
-            $curl_result_obj = json_decode( $result, true );
-
+            
+            $curl_result_obj = \RecaptchaLib::validate($data["g-recaptcha-response"]);
 
             //return a failed response for bad recaptcha whatever
             if( $curl_result_obj["success"] !== true ){
-                return $this->sendFailedRecaptchaResponse($request, $curl_result_obj["error-codes"] );
+                return \RecaptchaLib::sendFailedRecaptchaResponse($request, $curl_result_obj["error-codes"] );
             }
         }
 

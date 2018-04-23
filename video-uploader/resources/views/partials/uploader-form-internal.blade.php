@@ -13,5 +13,12 @@ placeholder="your awesome title" autofocus />
   <label for="videofile">Maximum file size: <?php echo Helpers::getMaxFileUploadSize() / 1048576; ?>MB</label>
   <input name="videofile" type="file" max-size="<?php echo Helpers::getMaxFileUploadSize(); ?>" accept="video/mp4" @change="processFile($event)" required />
 </div>
-<button class="btn btn-lg btn-danger btn-block" type="submit" :disabled="uploaddisabled == 1 ? true : false" v-bind:title="uploadbuttontitle">
+
+@if ($errors->has('recaptcha'))
+    <span class="help-block">
+        <strong>{{ $errors->first('recaptcha') }}</strong>
+    </span>
+@endif
+
+<button id="upload_submit" class="btn btn-lg btn-danger btn-block" type="submit" :disabled="uploaddisabled == 1 ? true : false" v-bind:title="uploadbuttontitle">
 Upload</button>

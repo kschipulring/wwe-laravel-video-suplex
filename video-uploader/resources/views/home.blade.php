@@ -11,6 +11,9 @@ if( empty($message) ){
 }
 
 $dec_msg = base64_decode( trim($message) );
+
+
+$base_dir = urlencode( asset('/') );
 ?>
 
 @section('titlesupplment') Home - {{ $dec_msg }}  @endsection
@@ -52,5 +55,5 @@ $dec_msg = base64_decode( trim($message) );
 @endsection
 
 @section('endscriptfooter')
-  <script src="{{ asset('public/js/app.js') }}"></script>
+  <script src="{{ asset('public/js/app.js?base_dir=') . $base_dir }}"></script>
 @endsection

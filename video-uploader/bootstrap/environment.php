@@ -13,6 +13,12 @@
 $env = $app->detectEnvironment(function(){
 	$envFolder = dirname(__DIR__);
 
+	//always load the global settings
+	$dotenv_global = new Dotenv\Dotenv( dirname(__DIR__), ".global.env");
+	$dotenv_global->load();
+
+
+	//now lets find out which environment we should load from, based on the server url
 	$setEnv = "local";
 
 	if( !empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) ){
@@ -33,6 +39,5 @@ $env = $app->detectEnvironment(function(){
 		$dotenv = new Dotenv\Dotenv( dirname(__DIR__), "." . $setEnv.'.env');
 
 		$dotenv->load();
-	} 
-
+	}
 });

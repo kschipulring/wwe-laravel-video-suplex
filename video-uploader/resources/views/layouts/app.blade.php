@@ -14,8 +14,13 @@
 
     <title>{{ config('app.name', 'WWE Laravel Video Uploader') }} - @yield('titlesupplment')</title>
 
+
+    <?php
+    $base_dir = urlencode( asset('/') );
+    ?>
+
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('public/js/app.js?base_dir=') . $base_dir }}"></script>
 
     <script src="{{ asset('public/js/vue.1.0.16.js') }}"></script>
     

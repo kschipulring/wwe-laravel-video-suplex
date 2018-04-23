@@ -14,7 +14,7 @@
 
 
 @section('content')
-    <form class="form-signin" action="{{ url('/uploadvideo') }}" method="post" enctype="multipart/form-data">
+    <form class="form-signin" action="{{ url('/uploadvideo') }}" method="post" enctype="multipart/form-data" id="videoUploader">
       <img class="mb-4" src="{{ asset('public/svg/wwe_logo.svg') }}" alt="" width="100" height="100" />
       <h1 class="h3 mb-3 font-weight-normal">Upload a video</h1>
       <label for="title" class="sr-only">New Video Title</label>
@@ -36,4 +36,6 @@
   </script>
 
   <script src="{{ asset('public/js/uploader.js') }}"></script>
+
+  <?php echo RecaptchaLib::frontEndRender("upload_submit", "videoUploader"); ?>
 @endsection

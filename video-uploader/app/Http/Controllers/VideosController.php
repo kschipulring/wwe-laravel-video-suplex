@@ -51,6 +51,21 @@ class VideosController extends Controller
     		return redirect()->route('home', ['message' => $message]);
     	}
 
+    	//recaptcha stuff
+        $data = $request->all();
+
+        //for when there is recaptcha
+        if( !empty($data["g-recaptcha-response"]) && strlen($data["g-recaptcha-response"]) > 1 ){
+            
+            $curl_result_obj = \RecaptchaLib::validate($data["g-recaptcha-response"]);
+
+            //return a failed response for bad recaptcha whatever
+            if( $curl_result_obj["success"] !== true ){
+                return \RecaptchaLib::sendFailedRecaptchaResponse($request, $curl_result_obj["error-codes"] );
+            }
+        }
+
+
         //the uploaded file
     	$file = $request->file('videofile');
 

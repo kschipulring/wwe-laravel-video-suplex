@@ -10,7 +10,7 @@
                 <div class="panel-heading">Register</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('register') }}" id="registrationForm">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -65,7 +65,13 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-danger">
+                                @if ($errors->has('recaptcha'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('recaptcha') }}</strong>
+                                    </span>
+                                @endif
+                                
+                                <button type="submit" class="btn btn-danger" id="register_submit">
                                     Register
                                 </button>
                             </div>
@@ -77,3 +83,8 @@
     </div>
 </div>
 @endsection
+
+@section('endscriptfooter')
+  <?php echo RecaptchaLib::frontEndRender("register_submit", "registrationForm"); ?>
+@endsection
+
