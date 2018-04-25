@@ -95,17 +95,26 @@ function myAsyncFunction(url) {
 
 
 function getJson(url, useLS){
-	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			var myArr = JSON.parse(this.responseText);
-			//document.getElementById("demo").innerHTML = myArr[0];
+
+	/*return new Promise((resolve, reject) => {
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var myArr = JSON.parse(this.responseText);
+				//document.getElementById("demo").innerHTML = myArr[0];
 
 
-		}
-	};
-	xmlhttp.open("GET", url, true);
-	xmlhttp.send();
+			}
+		};
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+	});*/
+
+	var jsonPromise = myAsyncFunction(url);
+
+	return jsonPromise.then((successJsonStr) => {
+		resolve( JSON.parse(successJsonStr) );
+	});
 }
 
 function setEnvFromSrc(url){

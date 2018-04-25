@@ -2,7 +2,6 @@
 
 @extends('layouts.app')
 
-
 @section('titlesupplment')
  video uploader
 @endsection
@@ -37,5 +36,5 @@
 
   <script src="{{ asset('public/js/uploader.js') }}"></script>
 
-  <?php echo RecaptchaLib::frontEndRender("upload_submit", "videoUploader"); ?>
+  <?php echo RecaptchaLib::frontEndRender("upload_submit", "videoUploader", $errors); ?>
 @endsection

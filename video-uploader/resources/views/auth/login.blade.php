@@ -58,14 +58,7 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-
-                                @if ($errors->has('recaptcha'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('recaptcha') }}</strong>
-                                    </span>
-                                @endif
-
-                                <button type="submit" class="btn btn-danger" id="login_submit">
+                                <button type="submit" class="btn btn-danger" id="login_submit" value="login">
                                     Login
                                 </button>
 
@@ -90,5 +83,5 @@
 @endsection
 
 @section('endscriptfooter')
-    <?php echo RecaptchaLib::frontEndRender("login_submit", "recapForm1"); ?>
+    <?php echo RecaptchaLib::frontEndRender("login_submit", "recapForm1", $errors); ?>
 @endsection

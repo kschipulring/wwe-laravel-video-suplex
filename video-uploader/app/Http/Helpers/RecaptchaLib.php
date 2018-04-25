@@ -84,8 +84,16 @@ class RecaptchaLib{
 	 * @param $f - string, needs to be the id attribute of a form that the recaptcha widget shows up on.
 	 * @return View
 	 */
-	public static function frontEndRender($e, $f){
-		return view('partials.recaptcha-frontend', ['e' => $e, 'f' => $f]);
+	public static function frontEndRender($e, $f, $errors=null){
+
+		//render a recaptcha instance if the .env setting is on
+		if( !empty(env("RECAPTCHA_ON")) && env("RECAPTCHA_ON") == 1 ){
+			$main_view = view('partials.recaptcha-frontend', ['e' => $e, 'f' => $f, 'errors' => $errors]);
+
+			return $main_view;
+		}else{
+			return null;
+		}
 	}
 
 
