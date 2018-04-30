@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\App;
+
 /*
 |--------------------------------------------------------------------------
 | Detect The Application Environment
@@ -19,12 +21,16 @@ $env = $app->detectEnvironment(function(){
 
 
 	//now lets find out which environment we should load from, based on the server url
-	$setEnv = "local";
+	$setEnv = "testing";
 
 	if( !empty($_SERVER) && !empty($_SERVER['HTTP_HOST']) ){
 		switch( $_SERVER['HTTP_HOST'] ){
+			case "localhost":
+			case "wwe-laravel-video-suplex.3ringprototype.local":
+				$setEnv = "local";
+				break;
 			case "3ringprototype.com":
-			case "wwe_video_suplex.3ringprototype.com":
+			case "wwe-laravel-video-suplex.3ringprototype.com":
 				$setEnv = "production";
 				break;
 		}

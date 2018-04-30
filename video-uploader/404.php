@@ -6,4 +6,7 @@ $thisHttpDir = dirname($_SERVER["SCRIPT_NAME"]);
 
 $thisSiteDir = $protocol . str_replace("//", "/", $domainName . $thisHttpDir);
 
-header("Location: {$thisSiteDir}/index.php");
+
+//header("Location: {$thisSiteDir}/index.php");
+
+require_once 'index.php';

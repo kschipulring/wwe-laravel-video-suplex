@@ -16,14 +16,14 @@ $dec_msg = base64_decode( trim($message) );
 $base_dir = urlencode( asset('/') );
 ?>
 
-@section('titlesupplment') Home - {{ $dec_msg }}  @endsection
+@section('titlesupplment') Home @if ($dec_msg) - {{ $dec_msg }} @endif  @endsection
 
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Dashboard</div>duck penis
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -32,9 +32,14 @@ $base_dir = urlencode( asset('/') );
                         </div>
                     @endif
 
-                    You are logged in!  
-                    <br/>
-                    <br/>
+                    @if (Auth::check())
+
+                        You are logged in!  
+                        <br/>
+                        <br/>
+                    @else
+                      @include('auth.login')
+                    @endif
 
                     {{ $dec_msg }}
 

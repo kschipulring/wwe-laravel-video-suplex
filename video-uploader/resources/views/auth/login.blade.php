@@ -58,7 +58,7 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-danger" id="login_submit" value="login">
+                                <button type="submit" class="btn btn-danger" name="login_submit" id="login_submit" value="login">
                                     Login
                                 </button>
 

@@ -16,7 +16,9 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $response = $this->get('/login');
+
+        echo "you are a logger";
 
         $response->assertStatus(200);
     }
