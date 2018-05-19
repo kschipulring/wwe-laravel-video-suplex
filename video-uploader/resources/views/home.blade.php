@@ -23,7 +23,7 @@ $base_dir = urlencode( asset('/') );
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>duck penis
+                <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -32,13 +32,18 @@ $base_dir = urlencode( asset('/') );
                         </div>
                     @endif
 
+
                     @if (Auth::check())
 
                         You are logged in!  
                         <br/>
                         <br/>
                     @else
-                      @include('auth.login')
+                      <a href="{{ url('/login') }}">
+                        Log in or register if you would like to upload a video.
+                      </a>
+                      <br/>
+                      <sub>(not required to see or use any other part of the site)</sub>
                     @endif
 
                     {{ $dec_msg }}
@@ -57,8 +62,4 @@ $base_dir = urlencode( asset('/') );
         </div>
     </div>
 </div>
-@endsection
-
-@section('endscriptfooter')
-  <script src="{{ asset('public/js/app.js?base_dir=') . $base_dir }}"></script>
 @endsection
