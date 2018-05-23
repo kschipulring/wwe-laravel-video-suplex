@@ -16,6 +16,8 @@ Route::get('/', function () {
 	return view("home");
 });
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 
 Route::get('/videosuploader', 'VideosController@inspectauth');
 
@@ -41,7 +43,6 @@ Route::get('/user/{id}', 'UserController@getUser');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/uploadvideo', 'VideosController@upload');
 
