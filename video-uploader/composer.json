@@ -3,21 +3,26 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
-    "type": "project",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/kschipulring/SimplePowerTools"
+        }
+    ],
     "require": {
         "php": ">=5.6.4",
-        "guzzlehttp/guzzle": "~6.0",
-        "laravel/dusk": "^1.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "reliese/laravel": "^0.0.13"
+        "reliese/laravel": "^0.0.13",
+        "kschipulring/SimplePowerTools": "1.0.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "laravel/browser-kit-testing": "^2.0",
         "laravel/dusk": "^1.0",
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0"
+        "phpunit/phpunit": "~5.0",
+        "guzzlehttp/guzzle": "~6.0"
     },
     "autoload": {
         "classmap": [
@@ -28,7 +33,12 @@
             "App\\": "app/",
             "Tests\\": "tests/"
         },
+        "psr-0": {
+            "SimplePowerTools\\": "vendor/kschipulring/SimplePowerTools/SimplePowerTools/src/SimplePowerTools/",
+            "SPTsymfony\\": "vendor/kschipulring/SimplePowerTools/SimplePowerTools/src/SPTsymfony/"
+        },
         "files": [
+            "vendor/kschipulring/SimplePowerTools/SimplePowerTools/src/SPT_Loader.php",
             "app/Http/Helpers.php"
         ]
     },
@@ -50,6 +60,9 @@
     },
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true
-    }
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
