@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"Dus",
+				"DuskierTestCase"
+			],
+			[
+				"regist",
+				"register_submit"
+			],
+			[
+				"clear",
+				"clearInterval"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"env",
+				"env_code"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"sr",
+				"src_split"
+			],
+			[
+				"re",
+				"recaptcha"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"tra",
+				"traitLogin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"preg_",
+				"preg_match"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"preg_re",
+				"preg_replace"
+			],
+			[
+				"upload",
+				"upload-list"
+			],
+			[
+				"location",
+				"location_country"
+			],
+			[
+				"uploaded",
+				"uploaded_by_uid"
+			],
+			[
+				"base",
+				"base64_encode"
+			],
+			[
 				"the",
 				"the_num"
 			],
@@ -64,10 +136,6 @@
 				"addslashes"
 			],
 			[
-				"json",
-				"json_data"
-			],
-			[
 				"js",
 				"json_data"
 			],
@@ -78,10 +146,6 @@
 			[
 				"vertica",
 				"vertical-align"
-			],
-			[
-				"text",
-				"text-transform"
 			],
 			[
 				"opac",
@@ -106,10 +170,6 @@
 			[
 				"qu",
 				"quantity"
-			],
-			[
-				"url",
-				"url_obj"
 			],
 			[
 				"client",
@@ -140,76 +200,81 @@
 	"buffers":
 	[
 		{
-			"file": "video-uploader/resources/views/master.blade.php",
+			"file": "video-uploader/tests/Feature/BasicTest.php",
 			"settings":
 			{
-				"buffer_size": 1360,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "video-uploader/resources/views/signin.blade.php",
-			"settings":
-			{
-				"buffer_size": 1043,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "video-uploader/app/User.php",
-			"settings":
-			{
-				"buffer_size": 511,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "video-uploader/app/Providers/AppServiceProvider.php",
-			"settings":
-			{
-				"buffer_size": 485,
+				"buffer_size": 1184,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "video-uploader/database/migrations/2018_04_05_074410_create_videos_table.php",
+			"file": "video-uploader/bootstrap/environment.php",
 			"settings":
 			{
-				"buffer_size": 922,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\n\n<?php\n\nnamespace App;\n\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Video extends Model\n{\n    //\n}\n",
-			"file": "video-uploader/app/Video.php",
-			"file_size": 101,
-			"file_write_time": 131673878506086626,
-			"settings":
-			{
-				"buffer_size": 103,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "video-uploader/resources/views/uploads.blade.php",
-			"settings":
-			{
-				"buffer_size": 1512,
+				"buffer_size": 1320,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "video-uploader/resources/views/common-form-header.blade.php",
+			"file": "video-uploader/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php",
 			"settings":
 			{
-				"buffer_size": 601,
+				"buffer_size": 939,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "video-uploader/.local.env",
+			"settings":
+			{
+				"buffer_size": 926,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "video-uploader/database/migrations/old/2014_10_12_000000_create_users_table.php",
+			"settings":
+			{
+				"buffer_size": 899,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "video-uploader/database/migrations/2014_10_12_000000_create_users_table.php",
+			"settings":
+			{
+				"buffer_size": 899,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "video-uploader/app/Http/Controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 581,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+			"settings":
+			{
+				"buffer_size": 22392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "video-uploader/.env.testing",
+			"settings":
+			{
+				"buffer_size": 780,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -220,7 +285,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 35.0,
+		"height": 38.0,
 		"last_filter": "",
 		"selected_items":
 		[
@@ -229,7 +294,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 408.0
+		"width": 412.0
 	},
 	"console":
 	{
@@ -252,153 +317,174 @@
 	[
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/Auth",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations"
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/old"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/webpack.mix.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/src/Browser.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/src/TestCase.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/facebook/webdriver/lib/Remote/DesiredCapabilities.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/src/Dusk.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/stubs/DuskTestCase.stub",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.local.env",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Helpers/RecaptchaLib.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/simple-recaptcha.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/src/Console/stubs/test.stub",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.env.testing",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/readme.md",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/src/DuskServiceProvider.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/dusk/composer.json",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/composer.json",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/app.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/partials/recaptcha-frontend.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/auth/register.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/View/View.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/uploader.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/partials/uploader-form-internal.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/email/email.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/VideosController.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.global.env",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.production.env",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/tests/Unit/ExampleTest.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/phpunit.xml",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/tests/TestCase.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/home.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/Auth/LoginController.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Video.php",
+		"/C/Users/karl_acer/Downloads/recaptcha-php-1.11/recaptchalib.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/uploads.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/recaptcha-settings.json",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/bootstrap/environment.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/user.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/master.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/vue-recaptcha.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/config/app.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/User.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/qs-parse.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Helpers.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/routes/web.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Routing/Controller.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Jobs/SendVerificationEmail.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Middleware/EncryptCookies.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Middleware/VerifyCsrfToken.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/greggilbert/recaptcha/README.md",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/greggilbert/recaptcha/src/config/recaptcha.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/greggilbert/recaptcha/src/Recaptcha.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/signin.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/partials/common-form-header.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/upload-list.css",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/upload-list.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/user.css",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/UserController.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.env.example",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/server.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/bootstrap/autoload.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/common.css",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Mail/EmailVerification.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/auth/passwords/email.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/email/emailconfirm.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/email/verification.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/AbstractSmtpTransport.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/SetRequestForConsole.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/bootstrap/app.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/old/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/artisan",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/auth/passwords/reset.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/common-form-header.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.gitignore",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/app.css",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/vlucas/phpdotenv/src/Dotenv.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/404.php",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/config/database.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/index.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/vlucas/phpdotenv/src/Loader.php",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.env",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/Application.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/bootstrap/cache/services.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/2018_04_05_152151_create_metadata_table.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Http/Middleware/TrimStrings.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/factories/ModelFactory.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/uploader.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/2018_04_06_032224_create_video_likes_table.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/uploads.css",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/2014_10_12_000000_create_users_table.php",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Providers/AppServiceProvider.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/2014_10_12_100000_create_password_resets_table.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/uploader.js",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/form.css",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/common.css",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/routes/web.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/getid3/getid3.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/getid3/getid3.lib.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/database/migrations/2018_04_05_074410_create_videos_table.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/composer/ClassLoader.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/composer/autoload_classmap.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/vendor/composer/autoload_files.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/partials/common-navbar.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/partials/uploader-form.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/vue-app.core.js",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/common-navbar.blade.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/common-form-header.blade.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/signin.blade.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/app.js",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/common-header.blade.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/app/Models/Video.php",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/composer.lock",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/composer.lock",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/composer.json",
+		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/form.css",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/vue.1.0.16.js",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/js/vue.js",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/common-header.blade.php",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/.htaccess",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/404.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/index.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/uploads.css",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/resources/views/welcome.blade.php",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.gitignore",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/.htaccess",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/404page.html",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/css/bootstrap4.css",
-		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/server.php",
 		"/C/xampp/htdocs/projects/wwe-laravel-video-suplex/video-uploader/public/index.php",
 		"/C/xampp/htdocs/projects/my-project-name/README.md",
 		"/C/xampp/htdocs/projects/palmasettemiinc/index.php",
-		"/C/xampp/htdocs/projects/my-project-name/src/app/app.module.ts",
-		"/C/xampp/htdocs/projects/my-project-name/src/app/app.component.ts",
-		"/C/xampp/htdocs/projects/my-project-name/package.json",
-		"/C/xampp/htdocs/projects/my-project-name/src/app/app.component.spec.ts",
-		"/C/xampp/htdocs/projects/Portfolio/package.json",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/WallaceDist/header.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/WallaceDist/index.php",
-		"/C/xampp/htdocs/projects/Portfolio/src/settings/app.settings.ts",
-		"/C/xampp/htdocs/projects/my-project-name/node_modules/angular4-json-schema-view/src/material-design-framework/material-textarea.component.ts",
-		"/C/xampp/htdocs/projects/my-project-name/node_modules/@angular/material/bundles/material-datepicker.umd.js",
-		"/C/xampp/htdocs/projects/my-project-name/node_modules/angular4-json-schema-view/src/widget-library/widget-library.module.ts",
-		"/C/xampp/htdocs/projects/angular2-schema-form-demo/src/app/app.component.ts",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/twentyseventeen/functions.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-basic/header.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/page.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/header.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/WallaceDist/functions.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/js/main.js",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/plugins/wp-rest-api-v2-menus/wp-rest-api-v2-menus.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/ts/main.ts",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/ts/app.ts",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-config.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-settings.php",
-		"/C/xampp/htdocs/projects/angular4_wpai-test/index.html",
-		"/C/xampp/htdocs/projects/angular4_wpai-test/config.js",
-		"/C/xampp/htdocs/projects/angular4_wpai-test/zone.js",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-includes/nav-menu-template.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-includes/nav-menu.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-includes/wp-db.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/ng-wp-theme/node_modules/@angular/cli/node_modules/@ngtools/json-schema/src/schema-class-factory.js",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/404.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/archive.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/comments.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-aside.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-link.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-page.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-quote.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content-single.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/content.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/change-log.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/getting-started-install.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/start-design-config.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/functions.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/image.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/BootstrapBasicAdminHelp.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/extras.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/template-tags.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/widgets/BootstrapBasicSearchWidget.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/languages/default.mo",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/languages/default.po",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/no-results.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/readme.txt",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/search.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/searchform.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/style.css",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/getting-started-custom-bg.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/getting-started-widget-navbar.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/index.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/start-design-change-language.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/document/start-design-resources.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/footer.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/views/BootstrapBasicAdminHelp_v.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/index.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/BootstrapBasicMyWalkerNavMenu.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/template-functions.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/inc/template-widgets-hook.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-basic/style.css",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/endurance-page-cache/_index.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/index.html",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/single.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/plugins/jetpack/modules/theme-tools/content-options/featured-images.php",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/js/config.js",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/config.js",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/src/app.ts",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/src/main.ts",
-		"/C/xampp/htdocs/projects/palmasettimiinc/wp-content/themes/bootstrap-angular4/index2.html",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/etc/config.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Catalog/Block/Product/Widget/Html/Pager.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/PagerBugfix/Block/Product/Widget/Html/Pager.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/Block/Navigation.php",
-		"/C/Users/Karl/AppData/Roaming/npm/node_modules/@angular/cli/node_modules/vm-browserify/test/vm.js",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/SkuSorter/Catalog/Block/Product/Widget/New.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/core/Mage/Catalog/Block/Product/Widget/New.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/SkuSorter/etc/config.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/etc/modules/ThreeRingDesign_SkuSorter.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/etc/config.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/etc/system.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/etc/widget.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/etc/modules/Psychose_CallBack.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Helper/Data.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Block/Left.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Block/Adminhtml/Callback.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Psychose/CallBack/Block/Index.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/community/Naya/CallForPrice/etc/config.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/template/threeringdesign/catalog/navigation/left.phtml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/Pfay/Films/Block/Adminhtml/Grid.php",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/threeringdesign_hideemptyoutofstockcategories.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/design/frontend/base/default/layout/catalog.xml",
-		"/C/xampp/htdocs/projects/PuppiesOfWestport/app/code/local/ThreeRingDesign/HideEmptyOutOfStockCategories/Model/Resource/Category.php"
+		"/C/xampp/htdocs/projects/my-project-name/src/app/app.module.ts"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 104.0,
 		"where_history":
 		[
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor\\laravel",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor\\laravel\\dusk\\src",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Testing",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\app",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor\\greggilbert",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor\\greggilbert\\recaptcha",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\app",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\public\\js",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\app",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\app",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\resources\\views",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\vendor\\composer",
+			"C:\\xampp\\htdocs\\projects\\wwe-laravel-video-suplex\\video-uploader\\resources\\views",
 			"C:\\xampp\\htdocs\\projects\\Portfolio\\src",
 			"C:\\xampp\\htdocs\\projects\\my-project-name",
 			"C:\\xampp\\htdocs\\projects\\palmasettimiinc\\wp-content\\themes\\WallaceDist",
@@ -502,14 +588,7 @@
 			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry\\magneto",
 			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry",
 			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry\\magneto",
-			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\switcher_test3_state",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\carousel-with-angularjs",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\angular_bootstrap_dropdown2",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\experiments\\angular\\switcher_test2_state",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white",
-			"C:\\Users\\Karl\\Documents\\work\\3ringdesign\\3ringprototype\\design_white\\includes\\classes"
+			"C:\\xampp\\htdocs\\projects\\magachelle_jewelry"
 		]
 	},
 	"find_state":
@@ -517,6 +596,67 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"function secure_url",
+			"createApplication",
+			"abstract",
+			"browse(",
+			"browse",
+			"Illuminate",
+			"recaptchaObj",
+			"the_view",
+			"$data",
+			"construct",
+			"RECAPTCHA_API_SERVER",
+			"RecaptchaServiceProvider",
+			"example1",
+			"recaptcha_check_answer",
+			"mcrypt_encrypt",
+			"login",
+			"->login",
+			"function login[\\s]?\\(",
+			"login[\\s]?\\(",
+			"redirectTo",
+			"verify",
+			"getMaxFileUploadSize",
+			"RECAPTCHA_API_SECURE_SERVER",
+			"RECAPTCHA_API_SERVER",
+			"RECAPTCHA_VERIFY_SERVER",
+			"function",
+			"ReCaptchaResponse",
+			"$rules",
+			"sitekey",
+			"Click the Link To Verify Your Email",
+			"’",
+			"‘",
+			"mailtrap.io",
+			"’",
+			"‘",
+			"”",
+			"’",
+			"‘",
+			"SERVER_PORT",
+			"cunt",
+			"Dotenv",
+			".env",
+			"localhost",
+			"Dotenv",
+			">environmentFile",
+			".env",
+			"The environment file to load during bootstrapping.",
+			"location",
+			"BeforeAnyDbQueryMiddleware",
+			"Auth::id()",
+			"uploads.css",
+			"getMaxFileUploadSize",
+			"Helpers.php",
+			"Helpers",
+			"vueuploadapp",
+			"    @",
+			">\n",
+			"common-header",
+			"common-header.blade.php",
+			"form",
+			"            \n",
 			"this.PortfolioBaseServiceURL",
 			"md-input-container",
 			"MaterialModule",
@@ -583,68 +723,7 @@
 			"narrow-by-list2",
 			"$collection",
 			"catalog/category",
-			"function getProductCount",
-			"getProductCount",
-			"renderCategoryMenuItemHtml",
-			"renderCategoriesMenuHtml",
-			"getStoreCategories",
-			"hasChildren",
-			"catalog_topnav_renderer",
-			"topnav",
-			"_childNodes",
-			"nav-primary",
-			"#e3ebf4",
-			"nav-primary",
-			"iframe",
-			"narrow-by-list",
-			"bootstrap.min.css",
-			"favicon.ico",
-			".pager",
-			"cccccc",
-			"f4f4f4",
-			"data",
-			"data-ajax-url",
-			"subject",
-			"getSubject",
-			"setSubject",
-			"subject",
-			"testimonial-image",
-			"page-header",
-			".label",
-			"label",
-			"select",
-			"Cache Lifetime (Seconds)",
-			"$product_items",
-			"page",
-			"per_page",
-			"products_per_page",
-			"DEFAULT_PRODUCTS_PER_PAGE",
-			"$gotData",
-			"LastNum",
-			"amount--has-pages",
-			"amount",
-			"of ",
-			"$i",
-			"sort",
-			"testimonial_id",
-			"Testimonial id",
-			"tm_testimonials",
-			"tmcore",
-			"TM_Testimonials",
-			"KCF_Testimonials",
-			"TM_Testimonials",
-			"tm_testimonials",
-			"TM_",
-			"tmcore",
-			"TM_",
-			"TM_Testimonials.xml",
-			"Mage_Adminhtml_Block_Widget_Grid_Container",
-			"setBody",
-			"_body",
-			"_request",
-			"_body",
-			"_request",
-			"_body"
+			"function getProductCount"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -652,6 +731,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"public static function",
+			"'",
+			"\"",
+			"'",
 			"bootstrap-angular4",
 			"Bootstrap Angular4 built from Bootstrap Basic",
 			"@package bootstrap-angular4",
@@ -700,71 +783,43 @@
 			[
 				{
 					"buffer": 0,
-					"file": "video-uploader/resources/views/master.blade.php",
+					"file": "video-uploader/tests/Feature/BasicTest.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1360,
+						"buffer_size": 1184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"rulers":
+							[
+								80
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "video-uploader/resources/views/signin.blade.php",
+					"file": "video-uploader/bootstrap/environment.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								185,
-								185
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "video-uploader/app/User.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 511,
+						"buffer_size": 1320,
 						"regions":
 						{
 						},
@@ -778,38 +833,63 @@
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "video-uploader/app/Providers/AppServiceProvider.php",
+					"buffer": 2,
+					"file": "video-uploader/vendor/laravel/framework/src/Illuminate/Support/Facades/App.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 485,
+						"buffer_size": 939,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								334,
-								334
+								43,
+								17
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "video-uploader/.local.env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 926,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -820,26 +900,24 @@
 				},
 				{
 					"buffer": 4,
-					"file": "video-uploader/database/migrations/2018_04_05_074410_create_videos_table.php",
+					"file": "video-uploader/database/migrations/old/2014_10_12_000000_create_users_table.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 922,
+						"buffer_size": 899,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								455,
-								455
+								640,
+								640
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -850,19 +928,19 @@
 				},
 				{
 					"buffer": 5,
-					"file": "video-uploader/app/Video.php",
+					"file": "video-uploader/database/migrations/2014_10_12_000000_create_users_table.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 103,
+						"buffer_size": 899,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2,
-								2
+								640,
+								640
 							]
 						],
 						"settings":
@@ -878,24 +956,23 @@
 				},
 				{
 					"buffer": 6,
-					"file": "video-uploader/resources/views/uploads.blade.php",
+					"file": "video-uploader/app/Http/Controllers/HomeController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1512,
+						"buffer_size": 581,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								976,
-								976
+								6,
+								6
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -909,19 +986,19 @@
 				},
 				{
 					"buffer": 7,
-					"file": "video-uploader/resources/views/common-form-header.blade.php",
+					"file": "video-uploader/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 601,
+						"buffer_size": 22392,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								402,
-								402
+								18443,
+								18443
 							]
 						],
 						"settings":
@@ -934,7 +1011,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "video-uploader/.env.testing",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -983,7 +1088,7 @@
 	"project": "wwe-video-uploader.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -993,8 +1098,24 @@
 		"selected_items":
 		[
 			[
+				"src/illuminate/foundation/providerrepository.php",
+				"video-uploader\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"common.css",
+				"video-uploader\\public\\css\\common.css"
+			],
+			[
+				"abstractsmtptransport.php",
+				"video-uploader\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\AbstractSmtpTransport.php"
+			],
+			[
 				"appserviceprovider.php",
 				"video-uploader\\app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"web.php",
+				"video-uploader\\routes\\web.php"
 			],
 			[
 				"theme-config.php",
@@ -1051,6 +1172,10 @@
 		"selected_items":
 		[
 			[
+				"migration",
+				"Migration"
+			],
+			[
 				"",
 				"$$alias"
 			],
@@ -1103,7 +1228,7 @@
 				"Mage_Core_Block_Template"
 			]
 		],
-		"width": 986.0
+		"width": 1084.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -1113,7 +1238,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 384.0,
+	"side_bar_width": 452.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
