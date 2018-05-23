@@ -22,7 +22,7 @@ class ExampleTest extends TestCase
 
 		$client = new Client([
 			// Base URI is used with relative requests
-			'base_uri' => 'http://wwe-laravel-video-suplex.3ringprototype.local/',
+			'base_uri' => env("APP_URL"),
 			// You can set any number of default request options.
 			'timeout'  => 20.0,
 		]);

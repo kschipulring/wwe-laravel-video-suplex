@@ -27,9 +27,11 @@ class ExampleTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('videosuploaded')
-            ->assertSee('Video');
+            ->assertSee('wrestling');
 
             //var_dump( $browser );
+
+            //$browser->visit('videosuploaded');
         });
     }
 }
