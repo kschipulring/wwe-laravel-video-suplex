@@ -32,7 +32,6 @@ $base_dir = urlencode( asset('/') );
                         </div>
                     @endif
 
-
                     @if (Auth::check())
 
                         You are logged in!  
@@ -62,4 +61,8 @@ $base_dir = urlencode( asset('/') );
         </div>
     </div>
 </div>
+@endsection
+
+@section('endscriptfooter')
+  <script src="{{ asset('public/js/app.js?base_dir=') . $base_dir }}"></script>
 @endsection
