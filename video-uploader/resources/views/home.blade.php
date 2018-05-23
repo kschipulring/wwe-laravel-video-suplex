@@ -37,15 +37,14 @@ $base_dir = urlencode( asset('/') );
                         You are logged in!  
                         <br/>
                         <br/>
+                        {{ $dec_msg }}
                     @else
-                      <a href="{{ url('/login') }}">
-                        Log in or register if you would like to upload a video.
-                      </a>
-                      <br/>
-                      <sub>(not required to see or use any other part of the site)</sub>
+                        <a href="{{ url('/login') }}">
+                            Log in or register if you would like to upload a video.
+                        </a>
+                        <br/>
+                        <sub>(not required to see or use any other part of the site)</sub>
                     @endif
-
-                    {{ $dec_msg }}
 
                     <br/>
                     <br/>
