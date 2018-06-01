@@ -116,33 +116,21 @@ class RecaptchaLib{
 			'response' => $g_recaptcha_response
 		);
 
+		$query = http_build_query($fields);
+		$options = array(
+			'http' => array (
+				'header' => "Content-Type: application/x-www-form-urlencoded\r\n".
+				"Content-Length: ".strlen($query)."\r\n".
+				"User-Agent:MyAgent/1.0\r\n",
+				'method' => 'POST',
+				'content' => $query
+			)
+		);
+		$context  = stream_context_create($options);
+		$verify = file_get_contents($url, false, $context);
+		$captcha_success=json_decode($verify, true);
 
-		$fields_string = "";
-
-		//url-ify the data for the POST
-		foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
-		rtrim($fields_string, '&');
-
-		//open connection
-		$ch = curl_init();
-
-		//set the url, number of POST vars, POST data
-		curl_setopt($ch,CURLOPT_URL, $url);
-		curl_setopt($ch,CURLOPT_POST, count($fields));
-		curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
-		curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
-
-
-		//execute post
-		$result = curl_exec($ch);
-
-		//close connection
-		curl_close($ch);
-
-		//turn response into object
-		$curl_result_obj = json_decode( $result, true );
-
-		return $curl_result_obj;
+		return $captcha_success;
 	}
 
 
@@ -152,7 +140,7 @@ class RecaptchaLib{
 	 * @param $errors -  array.
 	 * @return void
 	 */
-	public function sendFailedRecaptchaResponse(Request $request, $errors){
+	public static function sendFailedRecaptchaResponse(Request $request, $errors= array("don't know the error, bro") ){
 		$errors = ["recaptcha" => "recaptcha failed, because: " . implode(",", $errors) ];
 
 		if ($request->expectsJson()) {

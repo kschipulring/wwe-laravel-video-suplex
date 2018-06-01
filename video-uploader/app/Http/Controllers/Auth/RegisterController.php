@@ -89,22 +89,27 @@ class RegisterController extends Controller
         //recaptcha stuff
         $data = $request->all();
 
-        //for when there is recaptcha
-        if( !empty($data["g-recaptcha-response"]) && strlen($data["g-recaptcha-response"]) > 1 ){
-            
-            $curl_result_obj = \RecaptchaLib::validate($data["g-recaptcha-response"]);
+	   if( !$request->session()->has('registered') ||
+	   ($request->session()->get('registered') != $data["email"]) ){
 
-            //return a failed response for bad recaptcha whatever
-            if( $curl_result_obj["success"] !== true ){
-                return \RecaptchaLib::sendFailedRecaptchaResponse($request, $curl_result_obj["error-codes"] );
-            }
+	        //for when there is recaptcha
+	        if( !empty($data["g-recaptcha-response"]) && strlen($data["g-recaptcha-response"]) > 1 ){
+	            
+	            $curl_result_obj = \RecaptchaLib::validate($data["g-recaptcha-response"]);
+
+	            //return a failed response for bad recaptcha whatever
+	            if( $curl_result_obj["success"] !== true ){
+	                return \RecaptchaLib::sendFailedRecaptchaResponse($request, $curl_result_obj["error-codes"] );
+	            }else{
+                    $request->session()->put('registered', $data["email"] );
+	            }
+	        }
+
+	        $this->validator($data)->validate();
+	        event(new Registered($user = $this->create($data)));
+	        dispatch(new SendVerificationEmail($user));
+	        return view('email.verification');
         }
-
-
-        $this->validator($data)->validate();
-        event(new Registered($user = $this->create($data)));
-        dispatch(new SendVerificationEmail($user));
-        return view('email.verification');
     }
 
     /**
