@@ -43,6 +43,19 @@ Route::get('/user/{id}', 'UserController@getUser');
 
 Auth::routes();
 
+Route::get('/registered', function () {
+	//return view('welcome');
+
+	$haystack = Request::server('HTTP_REFERER');
+	$needle = env('APP_URL') . "register";
+
+	if( strstr($haystack, $needle) ){
+		return view("email.verification");
+	}else{
+		return redirect()->route('home');
+	}
+})->name('registered');
+
 
 Route::post('/uploadvideo', 'VideosController@upload');
 

@@ -108,7 +108,11 @@ class RegisterController extends Controller
 	        $this->validator($data)->validate();
 	        event(new Registered($user = $this->create($data)));
 	        dispatch(new SendVerificationEmail($user));
-	        return view('email.verification');
+	        //return view('email.verification');
+
+	        //return redirect('registered');
+
+	        return redirect()->route('registered' );
         }
     }
 
