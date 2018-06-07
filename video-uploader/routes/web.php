@@ -51,7 +51,9 @@ Route::get('/registered', function () {
 	//return view('welcome');
 
 	$haystack = Request::server('HTTP_REFERER');
-	$needle = env('APP_URL') . "register";
+	$needle = env('APP_URL') . "/register";
+
+	$needle = str_replace("//r", "/r", $needle);
 
 	if( strstr($haystack, $needle) ){
 		return view("email.verification");
