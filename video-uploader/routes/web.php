@@ -48,7 +48,6 @@ Route::get('/logout', function(){
 });
 
 Route::get('/registered', function () {
-	//return view('welcome');
 
 	$haystack = Request::server('HTTP_REFERER');
 	$needle = env('APP_URL') . "/register";
