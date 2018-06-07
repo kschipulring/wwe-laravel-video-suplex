@@ -43,6 +43,10 @@ Route::get('/user/{id}', 'UserController@getUser');
 
 Auth::routes();
 
+Route::get('/logout', function(){
+	return redirect()->route('home');
+});
+
 Route::get('/registered', function () {
 	//return view('welcome');
 
