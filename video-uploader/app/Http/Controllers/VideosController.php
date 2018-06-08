@@ -69,12 +69,7 @@ class VideosController extends Controller
         //the uploaded file
     	$file = $request->file('videofile');
 
-    	//var_dump($request);
-    	//die( $request->use_meta_title );
-
-
         $getID3 = new \getID3;
-
 
         //getting file name and saving the video someplace all in one
 		$path = $file->store('uploadedvideos');
@@ -89,10 +84,22 @@ class VideosController extends Controller
 		//title from the meta tags will be preferred if that checkbox is checked AND there is a title section in the tag
 		if( !empty($request->use_meta_title) && $request->use_meta_title == "on" ){
 
-			if( array_key_exists("title", $ThisFileInfo) && !empty($ThisFileInfo["title"])){
+			if( array_key_exists("title", $ThisFileInfo) && !empty($ThisFileInfo["title"])
+                && strlen( trim($ThisFileInfo["title"]) ) > 1 ){
 				$videoTitle = $ThisFileInfo["title"];
 			}
 		}
+
+
+        //populate the title with the hidden extra title if for some reason 'videoTitle' is not populated
+        if( strlen(trim($videoTitle)) < 1 && strlen(trim($data["backup_title"])) > 0 ){
+            $videoTitle = $data["backup_title"];
+        }
+
+        //if everything still has failed to populate the title
+        if( strlen(trim($videoTitle)) < 1 ){
+            $videoTitle = "Video Upload";
+        }
 
 
 		$filesize = (!empty($ThisFileInfo["filesize"]))? $ThisFileInfo["filesize"] : "";
@@ -109,7 +116,6 @@ class VideosController extends Controller
  		metadata is all available in one location for all tag formats
  		*/
 		\getid3_lib::CopyTagsToComments($ThisFileInfo);
-
 
 
 		//db insert for the basic video information

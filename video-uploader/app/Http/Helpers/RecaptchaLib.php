@@ -148,7 +148,7 @@ class RecaptchaLib{
 		}
 
 		return redirect()->back()
-		->withInput($request->only($this->username(), 'remember'))
+		->withInput($request->only('username', 'remember'))
 		->withErrors($errors);
 	}
 }
