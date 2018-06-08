@@ -23,7 +23,7 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    public function testBasicExample()
+    /*public function testBasicExample()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('videosuploaded')
@@ -37,15 +37,8 @@ class ExampleTest extends DuskTestCase
             ->type('email', 'kschipul@yahoo.com')
             ->type('password', 'abc123')
             ->press('login_submit')
-            ->assertPathIs('/home');
-        });
-    }
-
-    public function testSimpleLogin(){
-        $this->browse(function ($first, $second) {
-            $first->loginAs(User::find(1))
-                  ->visit('/home')
-                  ->logout();
+            ->assertPathIs('/home')
+            ->logout();
         });
     }
 
@@ -58,14 +51,39 @@ class ExampleTest extends DuskTestCase
             $str2 = 'abcdefghijklmnopqrstuvwxyz';
             $shuffled2 = str_shuffle($str2);
 
-            $browser
-            ->visit( '/register' )
+            $browser->visit( '/register' )
             ->type('name', 'Random User - ' . str_shuffle($str))
             ->type('email', "{$shuffled}@{$shuffled2}.com")
             ->type('password', 'abc123')
             ->type('password_confirmation', 'abc123')
             ->press('register_submit')
             ->assertPathIs('/registered');
+        });
+    }
+*/
+
+    public function testSimpleLogin(){
+        $this->browse(function ($first, $second) {
+            $first->loginAs(User::find(1))
+                  ->visit('/home')
+                  ->assertPathIs('/home');
+        });
+    }
+
+    public function testUploadVideoPage()
+    {
+        $this->browse(function (Browser $browser) {
+            $str = 'abcdefghijklmnopqrstuvwxyz1234567890 | .\\-~/';
+            $shuffled = str_shuffle($str);
+
+            $browser->visit('videosuploader')
+            ->waitFor('.h3.mb-3')
+            ->assertSee('Upload a video')
+            ->type('title', "Random Video " . $shuffled)
+            ->attach('videofile', 'C:\Users\Karl\Videos\small.mp4')
+            ->press('upload_submit')
+            ->assertPathIs('/home')
+            ->assertSee('small.mp4 has been uploaded!');
         });
     }
 }

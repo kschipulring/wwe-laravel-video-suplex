@@ -14,5 +14,5 @@ placeholder="your awesome title" autofocus />
   <input name="videofile" type="file" max-size="<?php echo Helpers::getMaxFileUploadSize(); ?>" accept="video/mp4" @change="processFile($event)" required />
 </div>
 
-<button id="upload_submit" class="btn btn-lg btn-danger btn-block" type="submit" :disabled="uploaddisabled == 1 ? true : false" v-bind:title="uploadbuttontitle">
+<button id="upload_submit" name="upload_submit" class="btn btn-lg btn-danger btn-block" type="submit" :disabled="uploaddisabled == 1 ? true : false" v-bind:title="uploadbuttontitle">
 Upload</button>
