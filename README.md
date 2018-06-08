@@ -55,4 +55,13 @@ You are welcome to create your own account to test and verify for yourself the f
   
  - Schema import from attached 'schema.sql' file.  Hopefully, you have something to manage your databases such as 'PHPmyAdmin', 'Navicat' or 'MySQL Workbench'.  Using this, pick your desired database as mentioned above (and referenced in your .env files).  Import the 'schema.sql' file into your database.  Also for security reasons, there is no actual data in this .sql file, merely the schema.
  
-7. On your desired server where all this has been installed, navigate to the respective folder from the server for wwe-laravel-video-suplex/video-uploader.
+7. On your desired server where all this has been installed, navigate to the respective in the folder from the server for wwe-laravel-video-suplex/video-uploader in your browser.
+
+For example, if you have a domain called "mytestdomain.net", it might be something like "mytestdomain.net/video-uploader".  However, a variety of setups can be done with tools like .htacess, in order to make it more like "mytestdomain.net" would be the base directory for this app, but such setups are beyond the scope for testing this app.
+
+
+8. Unit Testing.
+
+ - Dusk is the primary tool I have used for unit testing here.  I have a seperate dusk test for each standard app use.  To run all these, enter the following into the command line when you are in the app folder: 'php artisan dusk'.
+
+ - For other unit tests, using the same command line tool you may enter the following command './vendor/bin/phpunit' .  This runs all other unit tests.
