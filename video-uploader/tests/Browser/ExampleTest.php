@@ -23,7 +23,7 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    /*public function testBasicExample()
+    public function testBasicExample()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('videosuploaded')
@@ -60,7 +60,6 @@ class ExampleTest extends DuskTestCase
             ->assertPathIs('/registered');
         });
     }
-*/
 
     public function testSimpleLogin(){
         $this->browse(function ($first, $second) {
