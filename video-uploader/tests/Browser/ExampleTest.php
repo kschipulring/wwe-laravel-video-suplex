@@ -85,4 +85,24 @@ class ExampleTest extends DuskTestCase
             ->assertSee('small.mp4 has been uploaded!');
         });
     }
+
+    public function testLikeVideo()
+    {
+        $this->browse(function (Browser $browser) {
+            $browser->visit('videosuploaded')
+            ->assertSee('Complete List of Uploaded Videos')
+            ->press('like_1')
+            ->assertSee('Unlike');
+        });
+    }
+
+    public function testUnLikeVideo()
+    {
+        $this->browse(function (Browser $browser) {
+            $browser->visit('videosuploaded')
+            ->assertSee('Complete List of Uploaded Videos')
+            ->press('unlike_1')
+            ->assertSee('Like');
+        });
+    }
 }

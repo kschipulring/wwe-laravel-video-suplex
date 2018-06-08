@@ -97,11 +97,15 @@ window.googleMapsKey = "{{ env('GOOGLE_MAPS_KEY') }}";
                                     }
                                     ?>
 
-                                    <button type="button" class="btn btn-success like_trigger {{$likeClass}}" id="like_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
+                                    <button type="button" class="btn btn-success like_trigger {{$likeClass}}"
+                                    id="like_{{$video->id}}" name="like_{{$video->id}}"
+                                    rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
                                         <span class="glyphicon glyphicon-thumbs-up"></span> Like
                                     </button>
 
-                                    <button type="button" class="btn btn-danger unlike_trigger {{$unlikeClass}}" id="unlike_{{$video->id}}" rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
+                                    <button type="button" class="btn btn-danger unlike_trigger {{$unlikeClass}}"
+                                    id="unlike_{{$video->id}}" name="unlike_{{$video->id}}"
+                                    rel="{{$video->id}},{{$authId}}" vid="{{$video->id}}">
                                         <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
                                     </button>
                                 </div>
