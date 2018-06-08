@@ -1,7 +1,7 @@
 <?php  use App\Http\Helpers; ?>
 
 <input type="text" id="title" name="title" class="form-control" v-model="form.title" :disabled="disabled == 1 ? true : false"
-placeholder="your awesome title" value="s kool work" autofocus />
+placeholder="your awesome title" autofocus />
 
 <input type="hidden" id="backup_title" name="backup_title" class="form-control" v-model="form.title" />
 
