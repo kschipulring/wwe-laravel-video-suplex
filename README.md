@@ -57,8 +57,8 @@ You are welcome to create your own account to test and verify for yourself the f
  
 7. On your desired server where all this has been installed, navigate to the respective in the folder from the server for wwe-laravel-video-suplex/video-uploader in your browser.
 
-For example, if you have a domain called "mytestdomain.net", it might be something like "mytestdomain.net/video-uploader".  However, a variety of setups can be done with tools like .htacess, in order to make it more like "mytestdomain.net" would be the base directory for this app, but such setups are beyond the scope for testing this app.
-
+For example, if you have a domain called "mytestdomain.net", it might be something like "mytestdomain.net/video-uploader".  However, a variety of setups can be done with tools like .htacess and/or 'mod_rewrite', in order to make it more like "mytestdomain.net" would be the base directory for this app, but going into details for such setups are beyond the scope for testing this app.  If you would like more information on such a setup, please visit: 
+https://httpd.apache.org/docs/current/mod/mod_rewrite.html
 
 8. Unit Testing.
 
